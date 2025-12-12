@@ -1,0 +1,41 @@
+{
+  "navbar": {
+  "home": "Beranda",
+  "about_us": "Tentang Kami",
+  "news": "Berita",
+  "contact_us": "Kontak Kami",
+  "careers": "Karir",
+  "pages": "Halaman",
+  "portfolio": "Portofolio, Proyek & Bisnis",
+  "exploration_overview": "Gambaran Umum Eksplorasi Tambang",
+  "nickel_outlook": "Prospek Industri Nikel di Indonesia",
+  "operations": "Operasi Penambangan",
+  "licenses": "Izin & Sertifikasi Perusahaan",
+  "conclusion": "Kesimpulan"
+  },
+
+  "footer": {
+    "company_desc": "Temukan pembaruan, berita, dan informasi resmi perusahaan melalui akun media sosial kami.",
+    "useful_links": "Tautan Berguna",
+    "home": "Beranda",
+    "news": "Berita",
+    "contact_us": "Kontak",
+    "about_us": "Tentang Kami",
+    "career": "Karir",
+
+    "choose_language": "Pilih Bahasa",
+    "english": "Bahasa Inggris",
+    "indonesian": "Bahasa Indonesia",
+    "chinese": "中文（简体）",
+
+    "more_pages": "Halaman Lainnya",
+    "portfolio": "Portofolio, Proyek & Bisnis",
+    "mining_overview": "Gambaran Eksplorasi Tambang",
+    "nickel_outlook": "Prospek Industri Nikel di Indonesia",
+    "mining_operations": "Operasi Pertambangan",
+    "licenses": "Lisensi & Sertifikasi Utama",
+    "conclusion": "Kesimpulan",
+
+    "copyright": "Hak Cipta - Semua hak dilindungi."
+  }
+}

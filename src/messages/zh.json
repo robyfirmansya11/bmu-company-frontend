@@ -1,0 +1,40 @@
+{
+  "navbar": {
+  "home": "首页",
+  "about_us": "关于我们",
+  "news": "新闻",
+  "contact_us": "联系我们",
+  "blog": "博客",
+  "careers": "招聘",
+  "pages": "更多页面",
+  "portfolio": "作品集、项目与业务",
+  "exploration_overview": "采矿勘探概述",
+  "nickel_outlook": "印度尼西亚镍工业展望",
+  "operations": "采矿作业",
+  "licenses": "主要许可证和认证",
+  "conclusion": "结论"
+  },
+
+  "footer": {
+    "company_desc": "通过我们的社交媒体账户获取公司的最新动态、新闻和官方信息。",
+    "useful_links": "实用链接",
+    "home": "首页",
+    "news": "新闻",
+    "contact_us": "联系我们",
+    "about_us": "关于我们",
+    "career": "招聘",
+    "choose_language": "选择语言",
+    "english": "英语",
+    "indonesian": "印度尼西亚语",
+    "chinese": "中文（简体）",
+
+    "more_pages": "更多页面",
+    "portfolio": "作品集、项目与业务",
+    "mining_overview": "采矿勘探概述",
+    "nickel_outlook": "印度尼西亚镍工业展望",
+    "mining_operations": "采矿作业",
+    "licenses": "主要许可证和认证",
+    "conclusion": "结论",
+    "copyright": "版权所有 - 保留所有权利。"
+  }
+}

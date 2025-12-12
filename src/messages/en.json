@@ -1,0 +1,41 @@
+{
+  "navbar": {
+  "home": "Home",
+  "about_us": "About Us",
+  "news": "News",
+  "contact_us": "Contact Us",
+  "careers": "Careers",
+  
+  "pages": "Pages",
+  "portfolio": "Portfolio, Projects & Businesses",
+  "exploration_overview": "Overview of Mining Exploration",
+  "nickel_outlook": "Nickel Industry Outlook in Indonesia",
+  "operations": "Mining Operations",
+  "licenses": "Key Company Licenses and Certifications",
+  "conclusion": "Conclusion"
+  },
+
+  "footer": {
+    "company_desc": "Find updates, news, and official company information through our social media accounts.",
+    "useful_links": "Useful Links",
+    "home": "Home",
+    "news": "News",
+    "contact_us": "Contact Us",
+    "about_us": "About Us",
+    "career": "Careers",
+
+    "choose_language": "Choose Language",
+    "english": "English",
+    "indonesian": "Indonesian",
+    "chinese": "Chinese",
+
+    "more_pages": "More Pages",
+    "portfolio": "Portfolio, Projects & Business",
+    "mining_overview": "Mining Exploration Overview",
+    "nickel_outlook": "Nickel Industry Outlook in Indonesia",
+    "mining_operations": "Mining Operations",
+    "licenses": "Key Licenses & Certifications",
+    "conclusion": "Conclusion",
+    "copyright": "Copyright - All rights reserved."
+  }
+}

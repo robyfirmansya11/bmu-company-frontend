@@ -1,0 +1,52 @@
+"use client";
+
+import Image from "next/image";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { useDictionary } from "@/providers";
+
+export default function FooterLanguageMenu() {
+  const router = useRouter();
+  const pathname = usePathname();
+  const params = useSearchParams();
+  const dict = useDictionary(); // ✔ BENAR
+
+  const changeLang = (lang: string) => {
+    const newParams = new URLSearchParams(params.toString());
+    newParams.set("lang", lang);
+
+    router.replace(`${pathname}?${newParams.toString()}`);
+    router.refresh();
+  };
+
+const MenuItem = ({ lang, label, flag }: any) => (
+  <button
+    onClick={() => changeLang(lang)}
+    className="inline-flex items-center gap-2 text-base"
+  >
+    <Image src={flag} width={20} height={15} alt={label} />
+    {label}
+  </button>
+);
+  return (
+    <>
+  <div className="w-full px-2 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+      <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
+        {dict.footer.chooseLanguage}
+      </h2>
+
+      <ul className="space-y-3">
+        <li>
+          <MenuItem lang="en" label="English" flag="/flags/us.png" />
+        </li>
+        <li>
+          <MenuItem lang="id" label="Indonesian" flag="/flags/id.png" />
+        </li>
+        <li>
+          <MenuItem lang="zh" label="中文（简体）" flag="/flags/cn.png" />
+        </li>
+      </ul>
+    </div>
+
+    </>
+  );
+}
