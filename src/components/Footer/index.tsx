@@ -2,9 +2,26 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
+import { menuKeys } from "@/components/Header/menuData";
 
 const Footer = () => {
-  const t = useTranslations("footer");
+  const pathname = usePathname();
+const locale = pathname.split("/")[1]; // en | id | zh
+const menus = menuKeys(locale);
+
+const homePath = `/${locale}`;
+const contactPath = menus.find(m => m.key === "contact_us")?.path;
+const aboutPath = menus.find(m => m.key === "about_us")?.path;
+const careerPath = menus.find(m => m.key === "careers")?.path;
+const portfolioPath = `/${locale}/contact`;
+const miningOverviewPath = `/${locale}`;
+const nickelOutlookPath = `/${locale}/about`;
+const miningOperationsPath = `/${locale}/about`;
+const licensesPath = `/${locale}/operasi`;
+const conclusionPath = `/${locale}/about`;
+
+const t = useTranslations("footer");
 
   return (
     <>
@@ -36,41 +53,41 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Useful Links */}
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-2 lg:mb-16">
-                <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
-                  {t("useful_links")}
-                </h2>
-                <ul>
-                  <li>
-                    <Link href="/" className="footer-link">
-                      {t("home")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/blog" className="footer-link">
-                      {t("news")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/contact" className="footer-link">
-                      {t("contact_us")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/about" className="footer-link">
-                      {t("about_us")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/career" className="footer-link">
-                      {t("career")}
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+ {/* Useful Links */}
+<div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+  <div className="mb-6 lg:mb-16">
+    <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
+      {t("useful_links")}
+    </h2>
+
+    <ul>
+      <li>
+        <Link href={homePath} className="footer-link">
+          {t("home")}
+        </Link>
+      </li>
+
+      <li>
+        <Link href={contactPath ?? `/${locale}/contact`} className="footer-link">
+          {t("contact_us")}
+        </Link>
+      </li>
+
+      <li>
+        <Link href={aboutPath ?? `/${locale}/about`} className="footer-link">
+          {t("about_us")}
+        </Link>
+      </li>
+
+      <li>
+        <Link href={careerPath ?? `/${locale}/careers`} className="footer-link">
+          {t("careers")}
+        </Link>
+      </li>
+    </ul>
+  </div>
+</div>
+
 
  {/* Language Selector */}
 <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
@@ -119,47 +136,52 @@ const Footer = () => {
   </div>
 </div>
 
-            {/* More Pages */}
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
-                  {t("more_pages")}
-                </h2>
-                <ul>
-                  <li>
-                    <Link href="/contact" className="footer-link">
-                      {t("portfolio")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/" className="footer-link">
-                      {t("mining_overview")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/about" className="footer-link">
-                      {t("nickel_outlook")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/about" className="footer-link">
-                      {t("mining_operations")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/operasi" className="footer-link">
-                      {t("licenses")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/about" className="footer-link">
-                      {t("conclusion")}
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+{/* More Pages */}
+<div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
+  <div className="mb-12 lg:mb-16">
+    <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
+      {t("more_pages")}
+    </h2>
 
+    <ul>
+      <li>
+        <Link href={portfolioPath} className="footer-link">
+          {t("portfolio")}
+        </Link>
+      </li>
+
+      <li>
+        <Link href={miningOverviewPath} className="footer-link">
+          {t("mining_overview")}
+        </Link>
+      </li>
+
+      <li>
+        <Link href={nickelOutlookPath} className="footer-link">
+          {t("nickel_outlook")}
+        </Link>
+      </li>
+
+      <li>
+        <Link href={miningOperationsPath} className="footer-link">
+          {t("mining_operations")}
+        </Link>
+      </li>
+
+      <li>
+        <Link href={licensesPath} className="footer-link">
+          {t("licenses")}
+        </Link>
+      </li>
+
+      <li>
+        <Link href={conclusionPath} className="footer-link">
+          {t("conclusion")}
+        </Link>
+      </li>
+    </ul>
+  </div>
+</div>
           </div>
 
           {/* Bottom Copyright */}
