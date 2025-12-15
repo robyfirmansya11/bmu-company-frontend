@@ -1,8 +1,18 @@
 "use client";
+
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
+import { menuKeys } from "@/components/Header/menuData";
 
 const Hero = () => {
+  const pathname = usePathname();
+  const locale = pathname.split("/")[1]; // en | id | zh
+
+  const menus = menuKeys(locale);
+  const aboutPath = menus.find((m) => m.key === "about_us")?.path;
+  const contactPath = menus.find((m) => m.key === "contact_us")?.path;
+
   return (
     <section
       id="home"
@@ -50,7 +60,11 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.8 }}
               >
-                Since its establishment, PT Bumi Morowali Utama has been a key contributor to the provision of mineral resources for national development. Leveraging our extensive experience, we have steadily evolved into a mining company committed to professionalism, technological advancement, and sustainable practices.
+                Since its establishment, PT Bumi Morowali Utama has been a key
+                contributor to the provision of mineral resources for national
+                development. Leveraging our extensive experience, we have steadily
+                evolved into a mining company committed to professionalism,
+                technological advancement, and sustainable practices.
               </motion.p>
 
               <motion.div
@@ -60,13 +74,14 @@ const Hero = () => {
                 transition={{ delay: 1.2, duration: 0.8 }}
               >
                 <Link
-                  href="/about"
+                  href={aboutPath ?? `/${locale}/about`}
                   className="rounded-xs bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                 >
                   🔥 Learn More
                 </Link>
+
                 <Link
-                  href="/contact"
+                  href={contactPath ?? `/${locale}/contact`}
                   className="inline-block rounded-xs bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                 >
                   Contact Us
