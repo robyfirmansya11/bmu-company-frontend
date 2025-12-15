@@ -39,7 +39,7 @@ export default function Video() {
           variants={descAnim.variants}
           className="text-center max-w-7xl mx-auto text-base md:text-lg text-light-700"
         >
-          PT Bumi Morowali Utama was established in 2020 and has since been operating in Indonesia.. The company provides a wide range of products and services across multiple industries, including automotive, agricultural machinery, petrochemicals, as well as maintenance and customer support.
+          PT Bumi Morowali Utama was established in 2011 and has since been operating in Indonesia. The company provides a wide range of products and services across multiple industries, including automotive, agricultural machinery, petrochemicals, as well as maintenance and customer support.
         </motion.p>
       </div>
 
