@@ -52,7 +52,7 @@ const AboutSectionOne = () => {
         >
           <SectionTitle title="About Company." paragraph="" mb="20px" />
           <p className="text-body-color text-lg font-medium w-full mb-10 leading-relaxed">
-            PT Bumi Morowali Utama was established in 2020 and has since been
+            PT Bumi Morowali Utama was established in 2011 and has since been
             operating in Indonesia. The company provides a wide range of
             products and services across multiple industries, including
             automotive, agricultural machinery, petrochemicals, as well as
