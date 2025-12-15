@@ -5,12 +5,21 @@ import Link from "next/link";
 import SectionTitle from "../Common/SectionTitle";
 import { motion } from "framer-motion";
 import { useScrollFadeIn } from "@/hooks/useScrollFadeIn";
+import { usePathname } from "next/navigation";
+import { menuKeys } from "@/components/Header/menuData";
+
 
 export default function Video() {
   const titleAnim = useScrollFadeIn("up", 0);
   const descAnim = useScrollFadeIn("up", 0.2);
   const buttonAnim = useScrollFadeIn("up", 0.4);
   const videoAnim = useScrollFadeIn("up", 0.6);
+
+    const pathname = usePathname();
+  const locale = pathname.split("/")[1]; // en | id | zh
+
+  const menus = menuKeys(locale);
+  const aboutPath = menus.find(m => m.key === "about_us")?.path;
 
   return (
     <section className="relative z-10 py-16 md:py-20 lg:py-10 overflow-hidden">
@@ -54,7 +63,7 @@ export default function Video() {
         className="container text-center"
       >
         <Link
-          href="/about"
+          href={`/${locale}/about`}
           className="inline-block rounded bg-red-600 px-6 py-3 text-white transition hover:bg-red-700"
         >
           More About Us
