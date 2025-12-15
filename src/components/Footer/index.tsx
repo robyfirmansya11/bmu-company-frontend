@@ -72,34 +72,52 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Language Selector */}
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
-                  {t("choose_language")}
-                </h2>
-                <ul className="space-y-3">
-                  <li>
-                    <Link href="/en" className="inline-flex items-center gap-2 footer-link">
-                      <Image src="/flags/us.png" width={20} height={15} alt="" />
-                      {t("english")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/id" className="inline-flex items-center gap-2 footer-link">
-                      <Image src="/flags/id.png" width={20} height={15} alt="" />
-                      {t("indonesian")}
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/zh" className="inline-flex items-center gap-2 footer-link">
-                      <Image src="/flags/cn.png" width={20} height={15} alt="" />
-                      {t("chinese")}
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+ {/* Language Selector */}
+<div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+  <div className="mb-12 lg:mb-16">
+    <h2 className="mb-2 text-xl font-bold text-black dark:text-white">
+      {t("choose_language")}
+    </h2>
+
+    <ul className="space-y-3">
+      <li>
+        <Link href="/en" className="inline-flex items-center gap-2 footer-link">
+          <Image
+            src="/flags/US.png"
+            width={20}
+            height={15}
+            alt="English"
+          />
+          {t("english")}
+        </Link>
+      </li>
+
+      <li>
+        <Link href="/id" className="inline-flex items-center gap-2 footer-link">
+          <Image
+            src="/flags/ID.png"
+            width={20}
+            height={15}
+            alt="Indonesian"
+          />
+          {t("indonesian")}
+        </Link>
+      </li>
+
+      <li>
+        <Link href="/zh" className="inline-flex items-center gap-2 footer-link">
+          <Image
+            src="/flags/CN.png"
+            width={20}
+            height={15}
+            alt="Chinese"
+          />
+          {t("chinese")}
+        </Link>
+      </li>
+    </ul>
+  </div>
+</div>
 
             {/* More Pages */}
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
