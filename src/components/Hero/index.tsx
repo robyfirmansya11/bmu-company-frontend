@@ -1,3 +1,4 @@
+// locale-aware hero links (force deploy)
 "use client";
 
 import Link from "next/link";
