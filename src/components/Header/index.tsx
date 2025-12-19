@@ -89,13 +89,17 @@ const Header = ({ locale }) => {
               </button>
 
               {/* NAV */}
-              <nav
-                className={`navbar absolute right-0 z-30 w-[250px] rounded border bg-white px-6 py-4 duration-300 lg:static lg:w-auto lg:border-none lg:bg-transparent lg:p-0 ${
-                  navbarOpen
-                    ? "visibility top-full opacity-100"
-                    : "invisible top-[120%] opacity-0 lg:visible lg:opacity-100"
-                }`}
-              >
+<nav
+  className={`navbar absolute right-0 z-30 w-[250px] rounded border 
+  bg-white dark:bg-dark 
+  px-6 py-4 duration-300 
+  lg:static lg:w-auto lg:border-none 
+  lg:bg-transparent lg:dark:bg-transparent lg:p-0 ${
+    navbarOpen
+      ? "visibility top-full opacity-100"
+      : "invisible top-[120%] opacity-0 lg:visible lg:opacity-100"
+  }`}
+>
                 <ul className="block lg:flex lg:space-x-12">
                   {menus.map((menuItem, index) => (
                     <li key={index} className="group relative">
