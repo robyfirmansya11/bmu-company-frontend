@@ -15,7 +15,7 @@ Scope: this frontend repository and npm dependency tree. This is not a penetrati
 
 - Configure NEXT_PUBLIC_API_URL and NEXT_PUBLIC_APP_URL in Vercel with the intended HTTPS public endpoints. Never place secrets in NEXT_PUBLIC variables.
 - Enforce input validation, rate limiting/anti-spam, authentication/authorization, and appropriate CORS rules on the separate contact/news/careers backend. Frontend changes cannot enforce these controls.
-- Existing files under public/images/about/sertifikasi (including company/tax documents) are intentionally publicly downloadable in the existing website. Confirm they are approved for publication; no document content or historical Git data was reviewed or removed.
+- Update: the local licenses page and nine company/tax PDFs under public/images/about/sertifikasi have been removed, along with homepage/footer navigation. Removal reaches the public website only after deployment; previous deployments and Git history are not erased by this change. Document contents and historical Git data were not audited.
 - Existing ZIP/RAR archives remain in Git. Review their contents separately before treating this review as a complete secret scan.
 - Continue updating dependencies. Sanitized article styles and embedded frames are intentionally not preserved.
 

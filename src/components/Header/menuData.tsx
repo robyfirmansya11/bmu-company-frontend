@@ -11,7 +11,6 @@ export const menuKeys = (locale) => [
       { id: 42, key: "exploration_overview", path: `/${locale}/eksplorasi` },
       { id: 43, key: "nickel_outlook", path: `/${locale}/prospek` },
       { id: 44, key: "operations", path: `/${locale}/operasi` },
-      { id: 45, key: "licenses", path: `/${locale}/izin` },
       { id: 46, key: "conclusion", path: `/${locale}/kesimpulan` }
     ]
   }

@@ -20,7 +20,6 @@ const portfolioPath = `/${locale}/portfolio`;
 const miningOverviewPath = `/${locale}/eksplorasi`;
 const nickelOutlookPath = `/${locale}/prospek`;
 const miningOperationsPath = `/${locale}/operasi`;
-const licensesPath = `/${locale}/izin`;
 const conclusionPath = `/${locale}/kesimpulan`;
 
 const t = useTranslations("footer");
@@ -167,12 +166,6 @@ const t = useTranslations("footer");
       <li>
         <Link href={miningOperationsPath} className="footer-link">
           {t("mining_operations")}
-        </Link>
-      </li>
-
-      <li>
-        <Link href={licensesPath} className="footer-link">
-          {t("licenses")}
         </Link>
       </li>
 

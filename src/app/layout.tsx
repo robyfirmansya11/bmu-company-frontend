@@ -1,3 +1,4 @@
+import { siteUrl } from "@/lib/seo";
 import { headers } from "next/headers";
 import { defaultLocale, isLocale } from "@/lib/locales";
 // layout.tsx hanya untuk layout global (header, footer, dsb)
@@ -9,6 +10,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 // ✅ Metadata diizinkan di layout server component
 export const metadata = {
+  metadataBase: new URL(siteUrl),
+  verification: {google: process.env.GOOGLE_SITE_VERIFICATION || undefined},
   title: {
     default: "PT. Bumi Morowali Utama",
     template: "%s | PT. Bumi Morowali Utama",

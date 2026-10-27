@@ -1,91 +1,30 @@
-// locale-aware hero links (force deploy)
 "use client";
-import { useTranslations } from "next-intl";
-
+import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { usePathname } from "next/navigation";
-import { menuKeys } from "@/components/Header/menuData";
-
-const Hero = () => {
-  const t = useTranslations("hero");
-  const pathname = usePathname();
-  const locale = pathname.split("/")[1]; // en | id | zh
-
-  const menus = menuKeys(locale);
-  const aboutPath = menus.find((m) => m.key === "about_us")?.path;
-  const contactPath = menus.find((m) => m.key === "contact_us")?.path;
-
-  return (
-    <section
-      id="home"
-      className="relative z-10 overflow-hidden bg-white pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
-    >
-      {/* Shape kiri */}
-      <motion.img
-        src="/images/hero/shape-02.svg"
-        alt={t("left_decoration")}
-        animate={{ y: [0, -15, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-        className="pointer-events-none absolute left-0 top-1/2 hidden -translate-y-1/2 opacity-40 lg:block"
-      />
-
-      {/* Shape kanan */}
-      <motion.img
-        src="/images/hero/shape-01.svg"
-        alt={t("right_decoration")}
-        animate={{ y: [0, 15, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-        className="pointer-events-none absolute right-0 top-1/2 hidden -translate-y-1/2 opacity-40 lg:block"
-      />
-
-      <div className="container">
-        <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4">
-            <motion.div
-              className="mx-auto max-w-[800px] text-center"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-            >
-              <motion.h1
-                className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl md:text-5xl"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3, duration: 0.8 }}
-              >
-                PT. Bumi Morowali Utama
-              </motion.h1>
-
-              <motion.p
-                className="mb-12 text-base text-body-color dark:text-body-color-dark sm:text-lg md:text-xl"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6, duration: 0.8 }}
-              >{t("since_its_establishment_pt_bumi_morowali")}</motion.p>
-
-              <motion.div
-                className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.2, duration: 0.8 }}
-              >
-                <Link
-                  href={aboutPath ?? `/${locale}/about`}
-                  className="rounded-xs bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-                >{t("learn_more")}</Link>
-
-                <Link
-                  href={contactPath ?? `/${locale}/contact`}
-                  className="inline-block rounded-xs bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
-                >{t("contact_us")}</Link>
-              </motion.div>
-            </motion.div>
-          </div>
+import { useLocale, useTranslations } from "next-intl";
+import { ArrowUpRight, MapPin, ArrowDown } from "lucide-react";
+export default function Hero() {
+  const t = useTranslations("miningHome");
+  const locale = useLocale();
+  return <section id="home" className="mine-hero-wrap"><div className="mine-shell">
+    <div className="mine-hero">
+      <Image src="/images/about/Mining3.jpg" alt={t("photo")} fill priority sizes="(max-width: 1400px) 100vw, 1320px" className="mine-hero-photo" />
+      <div className="mine-hero-shade" />
+      <div className="mine-hero-content">
+        <p className="mine-eyebrow"><span className="mine-dot" />{t("eyebrow")}</p>
+        <h1>{t("title")}<br /><span>{t("accent")}</span></h1>
+        <p className="mine-hero-intro">{t("intro")}</p>
+        <div className="mine-actions">
+          <Link href={`/${locale}/about`} className="mine-button mine-button-primary">{t("profile")}<ArrowUpRight size={18} /></Link>
+          <Link href={`/${locale}/operasi`} className="mine-hero-link">{t("operations")}<ArrowUpRight size={18} /></Link>
         </div>
       </div>
-    </section>
-  );
-};
-
-export default Hero;
+      <div className="mine-hero-foot"><span><MapPin size={15} />{t("location")}</span><a href="#company" aria-label={t("profile")}><ArrowDown size={18} /></a></div>
+    </div>
+    <div className="mine-facts">
+      <div><p>{t("area")}</p><strong>{t("areaValue")} <small>{t("areaUnit")}</small></strong><span>{t("location")}</span></div>
+      <div><p>{t("production")}</p><strong>{t("productionValue")} <small>{t("productionUnit")}</small></strong><span>{t("period")}</span></div>
+      <div><p>{t("mineral")}</p><strong className="mine-resource">{t("mineralValue")}</strong><span>{t("mineralNote")}</span></div>
+    </div>
+  </div></section>;
+}

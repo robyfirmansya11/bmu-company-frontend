@@ -20,6 +20,7 @@ const Header = ({ locale }) => {
   };
   useEffect(() => {
     window.addEventListener("scroll", handleStickyNavbar);
+    return () => window.removeEventListener("scroll", handleStickyNavbar);
   }, []);
 
   const [openIndex, setOpenIndex] = useState(-1);
@@ -41,11 +42,11 @@ const Header = ({ locale }) => {
     >
       <div className="container">
         <div className="relative -mx-4 flex items-center justify-between">
-          <div className="w-60 max-w-full px-4 xl:mr-12">
+          <div className="w-28 sm:w-40 shrink-0 max-w-full px-4 xl:mr-12">
             <Link
               href={`/${locale}`}
               className={`header-logo block w-full ${
-                sticky ? "py-5 lg:py-2" : "py-8"
+                sticky ? "py-3" : "py-4"
               }`}
             >
               <Image
@@ -60,7 +61,7 @@ const Header = ({ locale }) => {
                 alt="logo"
                 width={140}
                 height={30}
-                className="hidden w-full dark:block"
+                className="hidden w-full rounded-md bg-white p-1 dark:block"
               />
             </Link>
           </div>
@@ -103,7 +104,7 @@ const Header = ({ locale }) => {
       : "invisible top-[120%] opacity-0 lg:visible lg:opacity-100"
   }`}
 >
-                <ul className="block lg:flex lg:space-x-12">
+                <ul className="block lg:flex lg:space-x-7 xl:space-x-10">
                   {menus.map((menuItem, index) => (
                     <li key={index} className="group relative">
                       {menuItem.path ? (
@@ -154,7 +155,7 @@ const Header = ({ locale }) => {
               </nav>
             </div>
 
-            <div className="flex items-center gap-4 lg:static absolute right-20 top-1/2 -translate-y-1/2">
+            <div className="flex items-center gap-4 lg:static lg:translate-y-0 absolute right-20 top-1/2 -translate-y-1/2">
               {/* Language Selector */}
   <div className="flex items-center gap-3">
     <LocaleLink locale="en"

@@ -1,0 +1,106 @@
+
+/* Mining home: uses the existing blue accent and light/dark theme. */
+.mining-home { --mine-bg:#fff; --mine-soft:#f5f6f8; --mine-ink:#182333; --mine-muted:#596575; --mine-line:#e3e7ed; background:var(--mine-bg); color:var(--mine-ink); }
+.dark .mining-home { --mine-bg:#171c28; --mine-soft:#1e2532; --mine-ink:#f5f7fa; --mine-muted:#afb9c9; --mine-line:#323d4d; }
+.mine-shell { width:min(1320px, calc(100% - 64px)); margin-inline:auto; }
+.mine-hero-wrap { padding-top:124px; }
+.mine-hero { position:relative; min-height:600px; overflow:hidden; border-radius:16px; background:#16212c; color:#fff; display:flex; align-items:center; }
+.mine-hero-photo { object-fit:cover; object-position:65% 45%; }
+.mine-hero-shade { position:absolute; inset:0; background:linear-gradient(90deg,rgba(10,22,33,.95) 0%,rgba(10,22,33,.78) 38%,rgba(10,22,33,.14) 100%); }
+.mine-hero-content { position:relative; padding:64px 60px 100px; max-width:850px; }
+.mine-eyebrow { display:flex; align-items:center; gap:10px; color:var(--color-primary); font-size:11px; font-weight:700; letter-spacing:.16em; line-height:1.8; margin-bottom:22px; }
+.mine-hero .mine-eyebrow { color:#e3eaff; }
+.mine-dot { display:inline-block; width:7px; height:7px; border-radius:50%; background:#8fa7ff; box-shadow:0 0 0 5px #8fa7ff1a; flex-shrink:0; }
+.mine-hero h1 { font-size:clamp(36px,4.6vw,66px); font-weight:600; letter-spacing:-.045em; line-height:1.12; max-width:760px; text-wrap:balance; }
+.mine-hero h1 span { color:#e1e7f0; }
+.mine-hero-intro { max-width:510px; font-size:15px; line-height:1.9; color:#d2dbe5; margin-top:26px; }
+.mine-actions { display:flex; align-items:center; flex-wrap:wrap; gap:24px; margin-top:34px; }
+.mine-button { display:inline-flex; align-items:center; justify-content:center; gap:16px; padding:16px 22px; border-radius:6px; font-size:13px; font-weight:600; transition:background .2s,transform .2s; }
+.mine-button-primary { background:var(--color-primary); color:white; }
+.mine-button-primary:hover { background:#3654db; transform:translateY(-2px); }
+.mine-hero-link { display:inline-flex; align-items:center; gap:12px; font-size:13px; color:white; padding:12px 0; }
+.mine-hero-link:hover { text-decoration:underline; text-underline-offset:6px; }
+.mine-hero-foot { position:absolute; inset:auto 60px 24px; display:flex; align-items:center; justify-content:space-between; border-top:1px solid #ffffff28; padding-top:18px; color:#e0e5eb; font-size:11px; letter-spacing:.03em; }
+.mine-hero-foot span { display:flex; align-items:center; gap:8px; }
+.mine-hero-foot a { display:grid; place-items:center; width:36px; height:36px; border:1px solid #ffffff40; border-radius:50%; }
+.mine-facts { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); padding:38px 0; border-bottom:1px solid var(--mine-line); }
+.mine-facts>div { padding:0 40px; border-right:1px solid var(--mine-line); }
+.mine-facts>div:first-child { padding-left:4px; }
+.mine-facts>div:last-child { border:0; }
+.mine-facts p { color:var(--mine-muted); font-size:12px; margin-bottom:12px; }
+.mine-facts strong { display:block; font-size:36px; letter-spacing:-.04em; line-height:1.2; font-weight:600; }
+.mine-facts strong small { font-size:14px; font-weight:400; letter-spacing:0; }
+.mine-facts .mine-resource { font-size:30px; }
+.mine-facts span { display:block; color:var(--mine-muted); font-size:11px; margin-top:12px; }
+.mine-section { padding-block:96px; }
+.mine-about { display:grid; grid-template-columns:1fr 1fr; gap:88px; align-items:center; scroll-margin-top:100px; }
+.mine-about-photo { position:relative; aspect-ratio:1.1; overflow:hidden; border-radius:12px; }
+.mine-about-photo img { object-fit:cover; object-position:40% center; }
+.mine-photo-caption { display:flex; flex-wrap:wrap; gap:8px 20px; justify-content:space-between; margin-top:18px; font-size:10px; line-height:1.8; color:var(--mine-muted); }
+.mine-photo-caption span { color:var(--mine-ink); font-weight:600; letter-spacing:.08em; }
+.mine-heading { font-size:clamp(28px,3vw,42px); font-weight:600; letter-spacing:-.035em; line-height:1.22; text-wrap:balance; }
+.mine-body { font-size:14px; line-height:1.9; color:var(--mine-muted); }
+.mine-about-copy>.mine-body { margin-top:24px; }
+.mine-about-links { margin-top:28px; }
+.mine-about-links a { display:flex; align-items:center; gap:18px; padding:20px 0; border-top:1px solid var(--mine-line); transition:color .2s; }
+.mine-about-links a:hover { color:var(--color-primary); }
+.mine-about-links a>svg:first-child { color:var(--color-primary); flex-shrink:0; }
+.mine-about-links a>svg:last-child { margin-left:auto; flex-shrink:0; }
+.mine-about-links strong { display:block; font-size:14px; font-weight:600; }
+.mine-about-links small { display:block; color:var(--mine-muted); font-size:12px; margin-top:5px; line-height:1.6; }
+.mine-operations { background:var(--mine-soft); }
+.mine-section-head { display:grid; grid-template-columns:1.3fr 1fr; gap:100px; align-items:end; margin-bottom:38px; }
+.mine-operation-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+.mine-operation-card { background:var(--mine-bg); border:1px solid var(--mine-line); border-radius:10px; overflow:hidden; transition:transform .25s,box-shadow .25s; }
+.mine-operation-card:hover { transform:translateY(-5px); box-shadow:0 16px 34px #0000000c; }
+.mine-card-image { position:relative; aspect-ratio:1.5; overflow:hidden; }
+.mine-card-image img { object-fit:cover; transition:transform .5s; }
+.mine-operation-card:hover img { transform:scale(1.04); }
+.mine-card-image>span { position:absolute; top:16px; left:16px; display:grid; place-items:center; width:34px; height:34px; border-radius:50%; background:#fff; color:#263140; font-size:11px; font-weight:600; }
+.mine-card-content { padding:26px; }
+.mine-card-content h3 { display:flex; align-items:center; justify-content:space-between; gap:12px; font-size:19px; font-weight:600; letter-spacing:-.02em; }
+.mine-card-content h3 svg { flex-shrink:0; color:var(--color-primary); }
+.mine-card-content p { color:var(--mine-muted); font-size:13px; line-height:1.8; margin-top:14px; min-height:70px; }
+.mine-card-link { display:inline-block; margin-top:20px; color:var(--color-primary); font-size:11px; font-weight:600; border-bottom:1px solid var(--color-primary); padding-bottom:4px; }
+.mine-commitment { display:grid; grid-template-columns:1.3fr 1fr; gap:80px; align-items:center; margin-top:64px; border-top:1px solid var(--mine-line); padding-top:42px; }
+.mine-commitment .mine-eyebrow { margin-bottom:12px; }
+.mine-commitment h2 { font-size:26px; line-height:1.3; letter-spacing:-.03em; font-weight:600; margin-bottom:14px; }
+.mine-video-link { display:flex; align-items:center; justify-content:center; gap:16px; padding:24px; border:1px solid var(--mine-line); border-radius:10px; background:var(--mine-bg); }
+.mine-video-link strong { display:block; font-size:13px; }
+.mine-video-link small { display:block; margin-top:6px; font-size:10px; color:var(--mine-muted); }
+.mine-play { display:grid; place-items:center; height:52px; width:52px; border-radius:50%; color:var(--color-primary); background:#4a6cf714; flex-shrink:0; }
+.mining-home .mine-partners { padding-block:64px; }
+.mining-home .mine-partners h2 { font-size:22px; font-weight:500; letter-spacing:-.02em; margin-bottom:30px; }
+.mining-home .mine-partner-grid { background:var(--mine-soft); border:1px solid var(--mine-line); border-radius:10px; padding:26px; }
+.mining-home #contact { padding:32px 0 64px; }
+.mining-home #contact .shadow-three { border:1px solid var(--mine-line); border-radius:12px; box-shadow:none; background:var(--mine-soft); }
+.mining-home #contact h2 { margin-bottom:26px; font-size:30px; font-weight:600; letter-spacing:-.025em; color:var(--mine-ink); }
+.mining-home #contact input,.mining-home #contact textarea { background:var(--mine-bg); color:var(--mine-ink); border-color:var(--mine-line); border-radius:6px; padding:16px; font-size:14px; }
+.mining-home #contact input::placeholder,.mining-home #contact textarea::placeholder { color:var(--mine-muted); }
+.mining-home #contact button { border-radius:6px; font-size:13px; font-weight:600; padding:15px 24px; }
+.mining-home a:focus-visible,.mining-home button:focus-visible,.mining-home input:focus-visible,.mining-home textarea:focus-visible { outline:3px solid #7693ff; outline-offset:5px; }
+.mining-home .container { max-width:1320px; padding-inline:0; width:calc(100% - 64px); }
+@media(min-width:992px) { .header .container { max-width:1320px; width:calc(100% - 64px); padding-inline:0; } }
+@media(max-width:1100px) { .mine-about { gap:40px; } .mine-section-head,.mine-commitment { gap:32px; } .mine-facts>div { padding-inline:24px; } }
+@media(max-width:767px) {
+  .mine-shell,.mining-home .container { width:calc(100% - 32px); }
+  .mine-hero-wrap { padding-top:104px; }
+  .mine-hero { min-height:580px; border-radius:10px; }
+  .mine-hero-content { padding:38px 26px 100px; }
+  .mine-hero-shade { background:linear-gradient(90deg,#0a1621ed,#0a162185); }
+  .mine-hero h1 { font-size:clamp(34px,7.5vw,52px); }
+  .mine-hero-intro { font-size:14px; }
+  .mine-hero-foot { left:26px; right:26px; font-size:10px; }
+  .mine-actions { gap:14px; }
+  .mine-facts { grid-template-columns:1fr; padding:12px 0; }
+  .mine-facts>div,.mine-facts>div:first-child { padding:22px 4px; border-right:0; border-bottom:1px solid var(--mine-line); }
+  .mine-facts strong { font-size:32px; }
+  .mine-section { padding-block:56px; }
+  .mine-about,.mine-section-head,.mine-commitment { grid-template-columns:1fr; gap:30px; }
+  .mine-about-copy { grid-row:1; }
+  .mine-operation-grid { grid-template-columns:1fr; gap:24px; }
+  .mine-card-content p { min-height:0; }
+  .mine-commitment { margin-top:40px; padding-top:32px; }
+  .mine-video-link { justify-content:flex-start; padding:18px; }
+}
+@media(prefers-reduced-motion:reduce) { .mining-home *, .mining-home *::before { transition:none!important; animation:none!important; } }
