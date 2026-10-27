@@ -1,4 +1,6 @@
 "use client";
+import LocaleLink from "@/components/LocaleLink";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
@@ -14,12 +16,12 @@ const homePath = `/${locale}`;
 const contactPath = menus.find(m => m.key === "contact_us")?.path;
 const aboutPath = menus.find(m => m.key === "about_us")?.path;
 const careerPath = menus.find(m => m.key === "careers")?.path;
-const portfolioPath = `/${locale}/contact`;
-const miningOverviewPath = `/${locale}`;
-const nickelOutlookPath = `/${locale}/about`;
-const miningOperationsPath = `/${locale}/about`;
-const licensesPath = `/${locale}/operasi`;
-const conclusionPath = `/${locale}/about`;
+const portfolioPath = `/${locale}/portfolio`;
+const miningOverviewPath = `/${locale}/eksplorasi`;
+const nickelOutlookPath = `/${locale}/prospek`;
+const miningOperationsPath = `/${locale}/operasi`;
+const licensesPath = `/${locale}/izin`;
+const conclusionPath = `/${locale}/kesimpulan`;
 
 const t = useTranslations("footer");
 
@@ -32,7 +34,7 @@ const t = useTranslations("footer");
             {/* Left Section */}
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-3 max-w-[360px] lg:mb-8">
-                <Link href="/" className="mb-8 inline-block">
+                <Link href={homePath} className="mb-8 inline-block">
                   <Image
                     src="/images/logo/BMU.PNG"
                     alt="logo"
@@ -98,7 +100,7 @@ const t = useTranslations("footer");
 
     <ul className="space-y-3">
       <li>
-        <Link href="/en" className="inline-flex items-center gap-2 footer-link">
+        <LocaleLink locale="en" className="inline-flex items-center gap-2 footer-link">
           <Image
             src="/flags/US.png"
             width={20}
@@ -106,11 +108,11 @@ const t = useTranslations("footer");
             alt="English"
           />
           {t("english")}
-        </Link>
+        </LocaleLink>
       </li>
 
       <li>
-        <Link href="/id" className="inline-flex items-center gap-2 footer-link">
+        <LocaleLink locale="id" className="inline-flex items-center gap-2 footer-link">
           <Image
             src="/flags/ID.png"
             width={20}
@@ -118,11 +120,11 @@ const t = useTranslations("footer");
             alt="Indonesian"
           />
           {t("indonesian")}
-        </Link>
+        </LocaleLink>
       </li>
 
       <li>
-        <Link href="/zh" className="inline-flex items-center gap-2 footer-link">
+        <LocaleLink locale="zh" className="inline-flex items-center gap-2 footer-link">
           <Image
             src="/flags/CN.png"
             width={20}
@@ -130,7 +132,7 @@ const t = useTranslations("footer");
             alt="Chinese"
           />
           {t("chinese")}
-        </Link>
+        </LocaleLink>
       </li>
     </ul>
   </div>

@@ -1,5 +1,6 @@
 // locale-aware hero links (force deploy)
 "use client";
+import { useTranslations } from "next-intl";
 
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -7,6 +8,7 @@ import { usePathname } from "next/navigation";
 import { menuKeys } from "@/components/Header/menuData";
 
 const Hero = () => {
+  const t = useTranslations("hero");
   const pathname = usePathname();
   const locale = pathname.split("/")[1]; // en | id | zh
 
@@ -22,7 +24,7 @@ const Hero = () => {
       {/* Shape kiri */}
       <motion.img
         src="/images/hero/shape-02.svg"
-        alt="shape-left"
+        alt={t("left_decoration")}
         animate={{ y: [0, -15, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         className="pointer-events-none absolute left-0 top-1/2 hidden -translate-y-1/2 opacity-40 lg:block"
@@ -31,7 +33,7 @@ const Hero = () => {
       {/* Shape kanan */}
       <motion.img
         src="/images/hero/shape-01.svg"
-        alt="shape-right"
+        alt={t("right_decoration")}
         animate={{ y: [0, 15, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
         className="pointer-events-none absolute right-0 top-1/2 hidden -translate-y-1/2 opacity-40 lg:block"
@@ -60,13 +62,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.8 }}
-              >
-                Since its establishment, PT Bumi Morowali Utama has been a key
-                contributor to the provision of mineral resources for national
-                development. Leveraging our extensive experience, we have steadily
-                evolved into a mining company committed to professionalism,
-                technological advancement, and sustainable practices.
-              </motion.p>
+              >{t("since_its_establishment_pt_bumi_morowali")}</motion.p>
 
               <motion.div
                 className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0"
@@ -77,16 +73,12 @@ const Hero = () => {
                 <Link
                   href={aboutPath ?? `/${locale}/about`}
                   className="rounded-xs bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-                >
-                  🔥 Learn More
-                </Link>
+                >{t("learn_more")}</Link>
 
                 <Link
                   href={contactPath ?? `/${locale}/contact`}
                   className="inline-block rounded-xs bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
-                >
-                  Contact Us
-                </Link>
+                >{t("contact_us")}</Link>
               </motion.div>
             </motion.div>
           </div>

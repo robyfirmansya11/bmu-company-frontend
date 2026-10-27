@@ -1,20 +1,19 @@
 {
   "navbar": {
-  "home": "首页",
-  "about_us": "关于我们",
-  "news": "新闻",
-  "contact_us": "联系我们",
-  "blog": "博客",
-  "careers": "招聘",
-  "pages": "更多页面",
-  "portfolio": "作品集、项目与业务",
-  "exploration_overview": "采矿勘探概述",
-  "nickel_outlook": "印度尼西亚镍工业展望",
-  "operations": "采矿作业",
-  "licenses": "主要许可证和认证",
-  "conclusion": "结论"
+    "home": "首页",
+    "about_us": "关于我们",
+    "news": "新闻",
+    "contact_us": "联系我们",
+    "careers": "招聘",
+    "pages": "更多页面",
+    "portfolio": "作品集、项目与业务",
+    "exploration_overview": "采矿勘探概述",
+    "nickel_outlook": "印度尼西亚镍工业展望",
+    "operations": "采矿作业",
+    "licenses": "主要许可证和认证",
+    "conclusion": "结论",
+    "toggle_menu": "展开或收起导航"
   },
-
   "footer": {
     "company_desc": "通过我们的社交媒体账户获取公司的最新动态、新闻和官方信息。",
     "useful_links": "实用链接",
@@ -27,7 +26,6 @@
     "english": "英语",
     "indonesian": "印度尼西亚语",
     "chinese": "中文（简体）",
-
     "more_pages": "更多页面",
     "portfolio": "作品集、项目与业务",
     "mining_overview": "采矿勘探概述",
@@ -36,5 +34,209 @@
     "licenses": "主要许可证和认证",
     "conclusion": "结论",
     "copyright": "版权所有 - 保留所有权利。"
+  },
+  "hero": {
+    "left_decoration": "左侧装饰",
+    "right_decoration": "右侧装饰",
+    "since_its_establishment_pt_bumi_morowali": "自成立以来，PT Bumi Morowali Utama 一直为国家建设提供重要的矿产资源。凭借丰富的经验，我们稳步发展成为一家致力于专业运营、技术进步和可持续实践的矿业公司。",
+    "learn_more": "🔥 了解更多",
+    "contact_us": "联系我们"
+  },
+  "overview": {
+    "about_us": "关于我们",
+    "pt_bumi_morowali_utama_bmu_is": "<b>PT Bumi Morowali Utama (BMU)</b> 是一家在印度尼西亚注册、总部位于雅加达的有限责任公司，主要从事镍矿资源的勘探、开采和销售。BMU 的矿业特许经营区位于中苏拉威西省莫罗瓦利县，面积为 1,963 公顷。该地区是印度尼西亚资源最丰富的地区之一，以集中的镍矿储量及活跃的采矿和冶炼活动而闻名。",
+    "company_name_pt_bumi_morowali_utama": "公司名称：<b>PT Bumi Morowali Utama</b><br></br>法律形式：有限责任公司 (PT)<br></br>主营业务：镍矿开采、销售及供应链合作<br></br>许可证：IUP Operasi Produksi（生产运营采矿许可证）<br></br>地址：Soho @Podomoro City Lantai 30 Unit 02, Jl. Letjen S. Parman Kav. 28, Jakarta Barat 11470",
+    "bmu_s_mining_resources_primarily_consist": "BMU 的矿产资源主要为红土镍矿，包括褐铁矿层和腐泥土层，大部分产量供应印度尼西亚国内冶炼厂。",
+    "about_us_9": "关于我们"
+  },
+  "vision": {
+    "vision_and_mission": "愿景与使命",
+    "pt_bumi_morowali_utama_was_established": "PT Bumi Morowali Utama 成立于 2011 年，此后一直在印度尼西亚运营。公司为汽车、农业机械、石油化工等多个行业提供广泛的产品和服务，以及维护和客户支持。",
+    "more_about_us": "进一步了解我们",
+    "company_video_preview": "公司视频预览",
+    "play_company_video": "播放公司视频"
+  },
+  "partners": {
+    "partners_and_clients": "合作伙伴与客户"
+  },
+  "contact": {
+    "contact_us": "联系我们",
+    "full_name": "姓名",
+    "email": "电子邮箱",
+    "message": "留言",
+    "send_message": "发送留言",
+    "success": "发送成功！",
+    "sent": "您的留言已成功发送。",
+    "failed": "发送失败",
+    "failure": "无法发送留言，请重试。",
+    "ok": "确定",
+    "subject": "网站联系留言"
+  },
+  "location": {
+    "our_location": "我们的位置",
+    "visit_our_location_on_the_map": "请在下方地图查看我们的位置。"
+  },
+  "about": {
+    "about_the_company": "关于公司",
+    "pt_bumi_morowali_utama_was_established": "PT Bumi Morowali Utama 成立于 2011 年，此后一直在印度尼西亚运营。公司为汽车、农业机械、石油化工等多个行业提供广泛的产品和服务，以及维护和客户支持。",
+    "vision": "愿景",
+    "to_become_a_trusted_strategic_partner": "成为镍矿行业值得信赖的战略合作伙伴，为新能源和不锈钢行业提供重要原料。我们的愿景以可持续发展、专业精神以及推动未来能源发展的承诺为基础。",
+    "mission": "使命",
+    "bmu_mining_operations": "BMU 采矿作业",
+    "mission_0": "与国内外企业建立长期互利的合作伙伴关系。",
+    "mission_1": "持续提升镍矿石产能，同时确保最高质量标准。",
+    "mission_2": "以安全、效率和可持续发展为重点，专业管理采矿运营。",
+    "mission_3": "通过支持培训、教育和人力资源开发，积极推动采矿行业发展。",
+    "mission_4": "通过负责任的采矿实践，为社区和环境创造附加价值。"
+  },
+  "profile": {
+    "company_profile": "公司简介",
+    "bmu_company_site": "BMU 公司场地",
+    "company_name_pt_bumi_morowali_utama": "<strong>公司名称：</strong>PT Bumi Morowali Utama",
+    "legal_entity_limited_liability_company_pt": "<strong>法律形式：</strong>有限责任公司 (PT)",
+    "main_business_nickel_ore_mining_sales": "<strong>主营业务：</strong>镍矿开采、销售及供应链合作",
+    "license_iup_operasi_produksi": "<strong>许可证：</strong>IUP Operasi Produksi（生产运营采矿许可证）",
+    "address_soho_podomoro_city_lantai_30": "<strong>地址：</strong> Soho @Podomoro City Lantai 30 Unit 02, Jl. Letjen S. Parman Kav. 28,<br></br> Kel. Tanjung Duren Selatan, Kec. Grogol Petamburan, Jakarta Barat 11470",
+    "introduction_to_bmu_nickel_mining_company": "BMU 镍矿公司介绍",
+    "pt_bumi_morowali_utama_hereinafter_referred": "PT Bumi Morowali Utama（以下简称 BMU） 是一家在印度尼西亚注册、总部位于雅加达的有限责任公司，主要从事镍矿资源的勘探、开采和销售。BMU 的矿业特许经营区位于中苏拉威西省莫罗瓦利县，面积为 1,963 公顷。该地区是印度尼西亚资源最丰富的地区之一，以集中的镍矿储量及活跃的采矿和冶炼活动而闻名。",
+    "bmu_s_mining_resources_primarily_consist": "BMU 的矿产资源主要为红土镍矿，包括褐铁矿层和腐泥土层，大部分产量供应印度尼西亚国内冶炼厂。"
+  },
+  "portfolioPage": {
+    "projects_and_business_portfolio": "项目与业务组合",
+    "key_projects": "主要项目",
+    "nickel_ore_trading_cooperation_with_indonesia": "与印度尼西亚领先的 IPP 公司 <strong>PT Mineral Maju Sejahtera</strong> 开展镍矿贸易合作。",
+    "mining_contracting_cooperation_with_an_experienced": "与经验丰富的合作伙伴 <strong>PT Hebei Geologikal Indonesia</strong> 开展采矿承包合作。",
+    "nickel_ore_supply_cooperation_with_a": "与知名冶炼公司 <strong>PT Obsidian Stainless Steel</strong> 开展镍矿供应合作。",
+    "project_1": "项目 1",
+    "project_2": "项目 2",
+    "project_3": "项目 3",
+    "milestones_and_achievements": "里程碑与成就",
+    "nickel_ore_production_of_approximately_100": "镍矿产量约为<strong>每月 ±100,000 湿公吨 (WMT)</strong>",
+    "gold_sponsor_in_the_miner_training": "2025 年 <em>“Miner Training”</em> 项目的<strong>金牌赞助商</strong>。",
+    "bmu_mine_location_map": "BMU 矿区位置图"
+  },
+  "eksplorasiPage": {
+    "mining_exploration_overview": "矿产勘探概况",
+    "in_december_2022_pt_hebei_geologikal": "2022 年 12 月，<strong>PT Hebei Geologikal Indonesia (HGI)</strong> 完成了地质调查并发布报告，主要成果如下：",
+    "exploration_areas_and_works": "勘探区域与工作",
+    "the_exploration_company_delineated_an_area": "勘探公司划定了 50 公顷的地质调查区域，分为两个勘探区（B4W 和 B1W-B2W）。主要完成工作包括：0.95 平方公里地形测量、17.86 公里剖面测量、0.95 平方公里专项地质调查、253 个钻孔施工、4,973 件样品基本分析以及 253 个工程点测量。根据该区域的勘探结果，镍矿资源量（Ni ≥ 1.30%，控制资源量与推断资源量合计）估计为 272.6 万吨矿石，平均品位为 1.49%。其中，控制资源量为 190.7 万吨，平均品位为 1.49%；推断资源量为 81.9 万吨，平均品位为 1.49%。",
+    "according_to_the_latest_2025_exploration": "根据 2025 年最新勘探数据，在 212.99 公顷区域内：",
+    "at_an_average_nickel_grade_of": "平均镍品位为 1.0% 时，矿石储量估计为 2,981 万吨。",
+    "at_an_average_nickel_grade_of_57": "平均镍品位为 1.5% 时，矿石储量估计为 902 万吨。",
+    "nickel_resource_estimate_2022": "镍资源量估算（2022 年）",
+    "based_on_exploration_in_the_designated": "根据指定区域的勘探结果，镍矿资源量（<strong>Ni ≥ 1.30%</strong>，控制资源量与推断资源量合计）估计为<strong>272.6 万吨矿石</strong>，平均品位为 <strong>1.49%</strong>。具体如下：",
+    "controlled_resources_1_907_million_tons": "控制资源量：<strong>190.7 万吨</strong>，平均品位 <strong>1.49%</strong>",
+    "inferred_resources_0_819_million_tons": "推断资源量：<strong>81.9 万吨</strong>，平均品位 <strong>1.49%</strong>",
+    "detailed_calculations_are_provided_below": "详细计算如下：",
+    "mining_exploration_illustration": "矿产勘探示意图"
+  },
+  "operasiPage": {
+    "mining_operations": "采矿作业",
+    "in_the_years_2023_and_2024": "在 <strong>2023 年和 2024 年</strong>，<strong>BMU</strong> 共开采并销售了<strong>82 万吨镍矿石</strong>。矿石平均品位约为 <strong>1.5%</strong>，硅镁比 <strong>(Si/Mg) 约为 1.8</strong>，属于低硅镁比的中品位镍矿石。",
+    "bmu_also_has_a_dedicated_jetty": "<strong>BMU</strong> 还在海岸设有专用码头，可供驳船停靠并高效装载镍矿石以供运输。",
+    "photos_of_the_mining_area": "矿区照片",
+    "photos_of_the_jetty_area": "码头区域照片",
+    "mining_image": "矿区 {number}",
+    "jetty_image": "码头区域 {number}"
+  },
+  "prospekPage": {
+    "outlook_for_indonesia_s_nickel_industry": "印度尼西亚镍产业展望",
+    "1_global_demand_drivers": "1. 全球需求驱动因素",
+    "new_energy_batteries_nickel_is_a": "<strong>新能源电池：</strong>镍是三元锂电池（NCM/NCA）的核心原料。随着电动汽车（EV）的快速发展，全球对高镍正极材料的需求持续增长。",
+    "stainless_steel_industry_currently_around_70": "<strong>不锈钢行业：</strong>目前，全球约 70% 的镍消费用于不锈钢生产，这仍是需求的主要驱动力。作为全球最大的不锈钢生产国，中国对印度尼西亚镍矿石的依赖程度较高。",
+    "2_indonesia_s_policy_advantages": "2. 印度尼西亚的政策优势",
+    "indonesia_holds_the_world_s_largest": "印度尼西亚拥有全球最大的镍储量和产量，其储量占<strong>全球储量的 22% 以上</strong>。",
+    "the_government_has_implemented_a_nickel": "政府实施了<strong>镍矿石出口禁令</strong>，以促进国内冶炼以及镍生铁（NPI）、不锈钢和新能源电池产业的发展。",
+    "significant_investment_by_chinese_enterprises_in": "中国企业对冶炼厂和电池工厂的大规模投资形成了显著的产业集群效应，典型代表包括 <strong>IMIP</strong> 和 <strong>Weda Bay 工业园区</strong>。",
+    "3_investment_and_market_opportunities": "3. 投资与市场机遇",
+    "new_energy_wave_with_the_rising": "<strong>新能源浪潮：</strong>随着全球电动汽车普及率不断上升，预计到 2030 年，动力电池用镍需求将增至 2020 年的 3–4 倍。",
+    "industrial_clustering_sulawesi_and_maluku_are": "<strong>产业集群：</strong>苏拉威西和马鲁古正在发展完整的镍产业链。<strong>BMU</strong> 位于该区域的核心地带，拥有显著的地理优势。",
+    "capital_inflows_major_companies_from_china": "<strong>资本流入：</strong>来自中国（青山、华友）、韩国（LG）和欧洲（BASF）的大型企业已在印度尼西亚投资，表明镍矿供应需求强劲且持续增长。",
+    "indonesian_nickel_industry_outlook": "印度尼西亚镍产业展望"
+  },
+  "izinPage": {
+    "company_key_licenses_and_certifications": "公司主要许可证与认证",
+    "attached_are_the_company_s_principal": "以下为公司的主要许可证与认证，包括 IUPOP、IPPKH、RKAB 等。",
+    "pdf_viewer": "PDF 查看器",
+    "close": "关闭文档",
+    "document_0": "1. 公司设立契约",
+    "document_1": "2. 司法部批准决定（第 23 号设立契约）",
+    "document_2": "3. 企业识别号码 (NIB)",
+    "document_3": "4. 临时股东大会决议契约",
+    "document_4": "5. AHU 公司资料变更通知收讫文件",
+    "document_5": "6. 生产运营采矿许可证 (IUP)",
+    "document_6": "7. 林地使用许可证",
+    "document_7": "8. 纳税人识别号码 (NPWP)",
+    "document_8": "9. 登记证明 (SKT)"
+  },
+  "kesimpulanPage": {
+    "conclusion": "总结",
+    "as_a_nickel_mining_company_based": "作为一家位于印度尼西亚中苏拉威西省的镍矿公司，<strong>PT Bumi Morowali Utama (BMU)</strong> 凭借优越的地理位置和丰富的资源，有望受益于全球新能源与不锈钢行业的持续增长。",
+    "bmu_remains_committed_to_strengthening_lawful": "BMU 始终致力于加强合法合规的采矿运营，推进勘探与采矿技术，并积极保护当地环境。同时，公司努力与下游冶炼和电池企业建立稳定的合作关系，确保长期可持续发展。",
+    "bmu_mine": "BMU 矿区"
+  },
+  "careersPage": {
+    "career_in_our_company": "在我们公司发展职业",
+    "discover_who_we_are_and_the": "了解我们以及推动我们成功的企业文化。",
+    "career_illustration": "职业发展插图",
+    "in_our_space_few_companies_are": "在我们的领域，很少有公司与我们相同。这里汇聚了聪明且敬业的人才。我们关心人类与地球，为严峻的基础设施挑战创造创新解决方案，并以员工所有者的身份掌握未来。<br></br><br></br>我们的专业人员像公司所有者一样行事，因为他们确实如此。每项决策都体现了我们对安全、价值观和员工的承诺，同时推动客户与社区的发展。<br></br><br></br>在 Black & Veatch，您可以享受支持个人与职业成功的混合办公环境。在这里，您将有机会成长、探索新的可能性，并在掌握自身职业道路的同时，共同创造可持续的未来。",
+    "join_us": "加入我们",
+    "why_work_with_us": "为什么选择我们",
+    "employee_owned_culture": "员工持股文化",
+    "you_have_a_voice_every_team": "您的意见很重要。每位团队成员都为共同的成功作出贡献。",
+    "work_life_balance": "工作与生活平衡",
+    "hybrid_work_options_that_support_your": "混合办公选择支持您的个人与职业成长。",
+    "make_global_impact": "创造全球影响",
+    "help_shape_sustainable_infrastructure_that_improves": "帮助建设可持续基础设施，改善全球社区的生活。",
+    "ready_to_start_your_journey": "准备好开启您的旅程了吗？",
+    "explore_opportunities_that_allow_you_to": "探索与我们共同成长、创造影响并建立有意义职业生涯的机会。",
+    "explore_careers": "探索职业机会"
+  },
+  "blogPage": {
+    "news_and_company_updates": "新闻与公司动态",
+    "stay_updated_with_the_latest_company": "了解公司的最新信息。"
+  },
+  "contactPage": {
+    "contact_us": "联系我们",
+    "we_are_ready_to_assist_you": "我们随时为您提供有关服务、合作以及公司相关问题的信息。"
+  },
+  "aboutPage": {
+    "about_us": "关于我们",
+    "pt_bumi_morowali_utama_is_committed": "PT. Bumi Morowali Utama 致力于通过创新、专业精神和坚定的投入，成为推动工业发展的可靠伙伴。我们持续成长，并始终重视质量、工作安全以及对环境和周边社区的责任。"
+  },
+  "careerDetail": {
+    "job_vacancy_details": "职位详情",
+    "location": "📍 工作地点",
+    "job_type": "💼 工作类型",
+    "published_at": "🗓 发布日期",
+    "job_description": "职位描述",
+    "requirements": "任职要求",
+    "apply_now": "立即申请"
+  },
+  "newsDetail": {
+    "post_not_found": "未找到文章",
+    "tags": "标签：",
+    "share_this_post": "分享此文章：",
+    "by": "作者：{author}"
+  },
+  "newsList": {
+    "no_data": "暂无数据",
+    "no_news_available_yet": "暂无新闻",
+    "we_have_not_published_any_news": "我们尚未发布新闻，请稍后再来查看。",
+    "previous": "← 上一页",
+    "next": "下一页 →",
+    "pagination": "第 {current} / {total} 页"
+  },
+  "newsPreview": {
+    "latest_news": "最新新闻",
+    "view_all_news": "查看所有新闻 →"
+  },
+  "common": {
+    "theme": "切换颜色主题",
+    "top": "返回顶部",
+    "notFound": "抱歉，找不到此页面",
+    "missing": "您查找的页面可能已移动、被删除或不存在。",
+    "home": "返回首页",
+    "description": "PT. Bumi Morowali Utama — 推动工业发展的可靠伙伴。"
   }
 }

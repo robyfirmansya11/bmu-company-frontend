@@ -1,5 +1,5 @@
 export async function getCareerBySlug(slug: string) {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/careers/${slug}`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/careers/${encodeURIComponent(slug)}`, {
     next: { revalidate: 60 }, // ISR cache 1 menit
   });
 

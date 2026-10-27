@@ -1,3 +1,5 @@
+import { headers } from "next/headers";
+import { defaultLocale, isLocale } from "@/lib/locales";
 // layout.tsx hanya untuk layout global (header, footer, dsb)
 import { Inter } from "next/font/google";
 import "./index.css";
@@ -18,9 +20,11 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const requestedLocale = (await headers()).get("x-site-locale") ?? defaultLocale;
+  const locale = isLocale(requestedLocale) ? requestedLocale : defaultLocale;
   return (
-    <html suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <body>
           {children}
       </body>

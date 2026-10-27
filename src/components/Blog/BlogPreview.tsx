@@ -1,4 +1,5 @@
 "use client";
+import { useTranslations } from "next-intl";
 
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -8,6 +9,7 @@ import AnimateOnScroll from "../AnimateOnScroll";
 import { fetchNews } from "@/lib/api-client/news";
 
 export default function BlogPreview() {
+  const t = useTranslations("newsPreview");
   const pathname = usePathname();
   const locale = pathname.split("/")[1] || "en";
 
@@ -30,9 +32,7 @@ export default function BlogPreview() {
     <section className="py-16 bg-gray-light dark:bg-bg-color-dark">
       <div className="container text-center">
         <AnimateOnScroll>
-          <h2 className="text-3xl font-bold mb-6 text-black dark:text-white">
-            Latest news
-          </h2>
+          <h2 className="text-3xl font-bold mb-6 text-black dark:text-white">{t("latest_news")}</h2>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {blogs.map((blog) => (
@@ -44,9 +44,7 @@ export default function BlogPreview() {
             <Link
               href={`/${locale}/blog`}
               className="inline-block rounded bg-primary px-6 py-3 text-white font-medium hover:bg-primary/90 transition"
-            >
-              View All News →
-            </Link>
+            >{t("view_all_news")}</Link>
           </div>
         </AnimateOnScroll>
       </div>

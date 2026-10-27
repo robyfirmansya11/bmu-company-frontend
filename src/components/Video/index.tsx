@@ -1,4 +1,5 @@
 "use client";
+import { useTranslations } from "next-intl";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -10,6 +11,7 @@ import { menuKeys } from "@/components/Header/menuData";
 
 
 export default function Video() {
+  const t = useTranslations("vision");
   const titleAnim = useScrollFadeIn("up", 0);
   const descAnim = useScrollFadeIn("up", 0.2);
   const buttonAnim = useScrollFadeIn("up", 0.4);
@@ -32,7 +34,7 @@ export default function Video() {
           variants={titleAnim.variants}
         >
          <SectionTitle
-  title="Vision and Mission"
+  title={t("vision_and_mission")}
   paragraph=""
   center
   mb="5px"
@@ -47,9 +49,7 @@ export default function Video() {
           animate={descAnim.controls}
           variants={descAnim.variants}
           className="text-center max-w-7xl mx-auto text-base md:text-lg text-light-700"
-        >
-          PT Bumi Morowali Utama was established in 2011 and has since been operating in Indonesia. The company provides a wide range of products and services across multiple industries, including automotive, agricultural machinery, petrochemicals, as well as maintenance and customer support.
-        </motion.p>
+        >{t("pt_bumi_morowali_utama_was_established")}</motion.p>
       </div>
 
       <br />
@@ -65,9 +65,7 @@ export default function Video() {
         <Link
           href={`/${locale}/about`}
           className="inline-block rounded bg-red-600 px-6 py-3 text-white transition hover:bg-red-700"
-        >
-          More About Us
-        </Link>
+        >{t("more_about_us")}</Link>
       </motion.div>
 
       {/* Gambar Video */}
@@ -84,15 +82,15 @@ export default function Video() {
               <div className="relative aspect-[77/40] items-center justify-center">
                 <Image
                   src="/images/video/jalan-hauling.jpg"
-                  alt="video image"
+                  alt={t("company_video_preview")}
                   className="object-cover"
                   fill
                 />
                 <div className="absolute top-0 right-0 flex h-full w-full items-center justify-center">
                   <motion.button
-                    aria-label="video play button"
+                    aria-label={t("play_company_video")}
                     onClick={() =>
-                      window.open("https://youtu.be/LD-Jy2j5Pj0", "_blank")
+                      window.open("https://youtu.be/LD-Jy2j5Pj0", "_blank", "noopener,noreferrer")
                     }
                     className="text-primary flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white/75 transition hover:bg-white shadow-lg"
                     whileHover={{ scale: 1.1 }}

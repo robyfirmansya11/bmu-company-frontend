@@ -1,4 +1,5 @@
 "use client";
+import { useTranslations } from "next-intl";
 
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
@@ -25,6 +26,7 @@ const fadeUp: Variants = {
 };
 
 const AboutSectionOne = () => {
+  const t = useTranslations("about");
   const List = ({ text }: { text: string }) => (
     <motion.p
       variants={fadeUp}
@@ -50,14 +52,8 @@ const AboutSectionOne = () => {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <SectionTitle title="About Company." paragraph="" mb="20px" />
-          <p className="text-body-color text-lg font-medium w-full mb-10 leading-relaxed">
-            PT Bumi Morowali Utama was established in 2011 and has since been
-            operating in Indonesia. The company provides a wide range of
-            products and services across multiple industries, including
-            automotive, agricultural machinery, petrochemicals, as well as
-            maintenance and customer support.
-          </p>
+          <SectionTitle title={t("about_the_company")} paragraph="" mb="20px" />
+          <p className="text-body-color text-lg font-medium w-full mb-10 leading-relaxed">{t("pt_bumi_morowali_utama_was_established")}</p>
         </motion.div>
 
         <div className="flex flex-wrap items-start justify-between">
@@ -74,16 +70,10 @@ const AboutSectionOne = () => {
               },
             }}
           >
-            <List text="Visi" />
-            <motion.p variants={fadeUp} className="text-body-color mb-6 text-lg font-medium">
-              To become a trusted strategic partner in the nickel mining
-              industry, serving as a key supplier to the new energy and
-              stainless steel sectors. Our vision is driven by sustainability,
-              professionalism, and a commitment to advancing future energy
-              development.
-            </motion.p>
+            <List text={t("vision")} />
+            <motion.p variants={fadeUp} className="text-body-color mb-6 text-lg font-medium">{t("to_become_a_trusted_strategic_partner")}</motion.p>
 
-            <List text="Misi" />
+            <List text={t("mission")} />
             <motion.ul
               variants={{
                 hidden: {},
@@ -91,15 +81,9 @@ const AboutSectionOne = () => {
               }}
               className="list-disc pl-5 text-body-color mb-6 text-lg font-medium space-y-2"
             >
-              {[
-                "Establish long-term, mutually beneficial partnerships with domestic and international companies.",
-                "Continuously enhance nickel ore production capacity while ensuring the highest quality standards.",
-                "Manage mining operations professionally with a focus on safety, efficiency, and sustainability.",
-                "Actively contribute to the development of the mining industry by supporting training, education, and human resource development.",
-                "Create added value for communities and the environment through responsible mining practices.",
-              ].map((item, index) => (
+              {[0, 1, 2, 3, 4].map((index) => (
                 <motion.li key={index} variants={fadeUp}>
-                  {item}
+                  {t(`mission_${index}`)}
                 </motion.li>
               ))}
             </motion.ul>
@@ -116,7 +100,7 @@ const AboutSectionOne = () => {
             <div className="relative w-full max-w-[1280px] aspect-[2/2] overflow-hidden rounded-[30px] shadow-xl">
               <Image
                 src="/images/about/Mining4.png"
-                alt="Mining4"
+                alt={t("bmu_mining_operations")}
                 fill
                 className="object-cover transition-transform duration-500 hover:scale-105"
               />

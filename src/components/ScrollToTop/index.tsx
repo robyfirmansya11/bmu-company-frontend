@@ -1,8 +1,10 @@
 "use client";
+import { useTranslations } from "next-intl";
 
 import { useEffect, useState } from "react";
 
 export default function ScrollToTop() {
+  const t = useTranslations("common");
   const [isVisible, setIsVisible] = useState(false);
 
   // Top: 0 takes us all the way back to the top of the page
@@ -34,7 +36,7 @@ export default function ScrollToTop() {
       {isVisible && (
         <div
           onClick={scrollToTop}
-          aria-label="scroll to top"
+          aria-label={t("top")}
           className="bg-primary/80 hover:shadow-signUp flex h-10 w-10 cursor-pointer items-center justify-center rounded-md text-white shadow-md transition duration-300 ease-in-out"
         >
           <span className="mt-[6px] h-3 w-3 rotate-45 border-t border-l border-white"></span>

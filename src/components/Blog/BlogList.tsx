@@ -1,4 +1,5 @@
 "use client";
+import { useTranslations } from "next-intl";
 
 import { useState } from "react";
 import SingleBlog from "./SingleBlog";
@@ -11,6 +12,7 @@ export default function BlogList({
   blogs: any[];
   locale: string;
 }) {
+  const t = useTranslations("newsList");
   const itemsPerPage = 4;
   const [currentPage, setCurrentPage] = useState(1);
   const totalPages = Math.ceil(blogs.length / itemsPerPage);
@@ -25,17 +27,13 @@ export default function BlogList({
       <div className="flex flex-col items-center py-24">
         <Image
           src="/images/empty-state.png"
-          alt="No data"
+          alt={t("no_data")}
           width={180}
           height={180}
           className="mb-6 opacity-80"
         />
-        <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-2">
-          Belum ada berita tersedia
-        </h2>
-        <p className="text-gray-500 dark:text-gray-400 text-center max-w-md">
-          Kami belum mempublikasikan berita terbaru. Silakan kembali lagi nanti.
-        </p>
+        <h2 className="text-2xl font-semibold text-gray-700 dark:text-gray-300 mb-2">{t("no_news_available_yet")}</h2>
+        <p className="text-gray-500 dark:text-gray-400 text-center max-w-md">{t("we_have_not_published_any_news")}</p>
       </div>
     );
   }
@@ -53,21 +51,17 @@ export default function BlogList({
           className="px-4 py-2 text-sm border rounded disabled:opacity-40"
           onClick={() => setCurrentPage((p) => p - 1)}
           disabled={currentPage === 1}
-        >
-          ← Prev
-        </button>
+        >{t("previous")}</button>
 
         <span className="px-4 py-2 text-sm font-medium">
-          Page {currentPage} / {totalPages}
+          {t("pagination", {current: currentPage, total: totalPages})}
         </span>
 
         <button
           className="px-4 py-2 text-sm border rounded disabled:opacity-40"
           onClick={() => setCurrentPage((p) => p + 1)}
           disabled={currentPage === totalPages}
-        >
-          Next →
-        </button>
+        >{t("next")}</button>
       </div>
     </div>
   );

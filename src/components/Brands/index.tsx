@@ -1,17 +1,18 @@
+"use client";
+import { useTranslations } from "next-intl";
 import { Brand } from "@/types/brand";
 import Image from "next/image";
 import brandsData from "./brandsData";
 import AnimateOnScroll from "../AnimateOnScroll";
 
 const Brands = () => {
+  const t = useTranslations("partners");
   return (
     <section className="pt-10 pb-10 lg:pt-20 lg:pb-5">
       <div className="container">
 
         {/* Judul Section */}
-        <h2 className="text-center text-3xl font-bold text-gray-800 dark:text-white mb-10">
-          Partner and Clients
-        </h2>
+        <h2 className="text-center text-3xl font-bold text-gray-800 dark:text-white mb-10">{t("partners_and_clients")}</h2>
 
         {/* Grid Logo */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 items-center justify-center rounded-xs bg-gray-light px-8 py-8 dark:bg-gray-dark sm:px-10 md:px-[50px] md:py-[40px] xl:p-[50px] 2xl:px-[70px] 2xl:py-[60px]">

@@ -1,6 +1,10 @@
+"use client";
+import { richTextTags } from "@/lib/richTextTags";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const AboutSectionTwo = () => {
+  const t = useTranslations("profile");
   return (
     <section
       id="about"
@@ -8,9 +12,7 @@ const AboutSectionTwo = () => {
     >
       <div className="w-full px-6 lg:px-10">
         <hr className="border-gray-300 dark:border-gray-700 mb-16" />
-        <h1 className="text-center text-5xl md:text-5xl font-bold text-black dark:text-white mb-16">
-          Profile Company
-        </h1>
+        <h1 className="text-center text-5xl md:text-5xl font-bold text-black dark:text-white mb-16">{t("company_profile")}</h1>
 
         {/* Layout dua kolom: kiri gambar - kanan teks */}
         <div className="flex flex-wrap items-start justify-between">
@@ -19,7 +21,7 @@ const AboutSectionTwo = () => {
             <div className="relative w-full max-w-[640px] lg:max-w-[580px] aspect-[2/1] overflow-hidden rounded-[30px] shadow-xl">
               <Image
                 src="/images/about/bmu1.png"
-                alt="bmu1"
+                alt={t("bmu_company_site")}
                 fill
                 priority
                 className="object-cover transition-transform duration-500 hover:scale-105 will-change-transform"
@@ -32,14 +34,11 @@ const AboutSectionTwo = () => {
             {/* Profil Perusahaan */}
             <div className="mb-10">
               <div className="text-body-color text-lg leading-relaxed space-y-2">
-                <p><strong>Company Name:</strong> PT Bumi Morowali Utama</p>
-                <p><strong>Legal Entity:</strong> Perseroan Terbatas (PT)</p>
-                <p><strong>Main Business:</strong> Nickel ore mining, sales, and supply chain cooperation</p>
-                <p><strong>License:</strong> IUP Operasi Produksi</p>
-                <p>
-                  <strong>Address:</strong> Soho @Podomoro City Lantai 30 Unit 02, Jl. Letjen S. Parman Kav. 28,<br />
-                  Kel. Tanjung Duren Selatan, Kec. Grogol Petamburan, Jakarta Barat 11470
-                </p>
+                <p>{t.rich("company_name_pt_bumi_morowali_utama", richTextTags)}</p>
+                <p>{t.rich("legal_entity_limited_liability_company_pt", richTextTags)}</p>
+                <p>{t.rich("main_business_nickel_ore_mining_sales", richTextTags)}</p>
+                <p>{t.rich("license_iup_operasi_produksi", richTextTags)}</p>
+                <p>{t.rich("address_soho_podomoro_city_lantai_30", richTextTags)}</p>
               </div>
             </div>
           </div>
@@ -49,18 +48,11 @@ const AboutSectionTwo = () => {
         <div className="mt-16 max-w-[1000px] mx-auto">
           {/* Pengenalan */}
           <div className="mb-10">
-            <h3 className="text-2xl font-bold text-black dark:text-white mb-3">
-              Introduction to BMU Nickel Mining Company
-            </h3>
-            <p className="text-body-color text-lg leading-relaxed">
-              PT Bumi Morowali Utama (hereinafter referred to as BMU) is a limited liability company (Perseroan Terbatas) registered in Indonesia and headquartered in Jakarta. The company is primarily engaged in the exploration, mining, and sales of nickel ore resources. BMU’s mining concession is located in Morowali Regency, Central Sulawesi (Kabupaten Morowali, Sulawesi Tengah), covering an area of 1,963 hectares. This region is among the most resource-rich areas in Indonesia, known for its concentrated nickel reserves and active mining and smelting operations.
-            </p>
+            <h3 className="text-2xl font-bold text-black dark:text-white mb-3">{t("introduction_to_bmu_nickel_mining_company")}</h3>
+            <p className="text-body-color text-lg leading-relaxed">{t("pt_bumi_morowali_utama_hereinafter_referred")}</p>
           </div>
 
-          <p className="text-body-color text-lg leading-relaxed">
-            BMU’s mining resources primarily consist of laterite nickel ore, including both the limonite layer and the saprolite layer, with the majority of production supplied to domestic smelters in Indonesia.
-
-          </p>
+          <p className="text-body-color text-lg leading-relaxed">{t("bmu_s_mining_resources_primarily_consist")}</p>
           <br />
             <hr className="border-gray-300 dark:border-gray-700 md:5a" />
         </div>

@@ -1,4 +1,5 @@
 "use client";
+import LocaleLink from "@/components/LocaleLink";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -42,7 +43,7 @@ const Header = ({ locale }) => {
         <div className="relative -mx-4 flex items-center justify-between">
           <div className="w-60 max-w-full px-4 xl:mr-12">
             <Link
-              href="/"
+              href={`/${locale}`}
               className={`header-logo block w-full ${
                 sticky ? "py-5 lg:py-2" : "py-8"
               }`}
@@ -68,6 +69,8 @@ const Header = ({ locale }) => {
             <div>
               {/* Mobile Button */}
               <button
+                aria-label={t("toggle_menu")}
+                aria-expanded={navbarOpen}
                 onClick={navbarToggleHandler}
                 className="ring-primary absolute top-1/2 right-4 block translate-y-[-50%] rounded-lg px-3 py-[6px] focus:ring-2 lg:hidden"
               >
@@ -154,8 +157,7 @@ const Header = ({ locale }) => {
             <div className="flex items-center gap-4 lg:static absolute right-20 top-1/2 -translate-y-1/2">
               {/* Language Selector */}
   <div className="flex items-center gap-3">
-    <Link
-      href={`/en${pathname.replace(`/${locale}`, "")}`}
+    <LocaleLink locale="en"
       className={`text-sm font-medium ${
         locale === "en"
           ? "text-primary dark:text-white"
@@ -163,12 +165,11 @@ const Header = ({ locale }) => {
       }`}
     >
       EN
-    </Link>
+    </LocaleLink>
 
     <span className="text-gray-400 dark:text-gray-500">|</span>
 
-    <Link
-      href={`/id${pathname.replace(`/${locale}`, "")}`}
+    <LocaleLink locale="id"
       className={`text-sm font-medium ${
         locale === "id"
           ? "text-primary dark:text-white"
@@ -176,12 +177,11 @@ const Header = ({ locale }) => {
       }`}
     >
       ID
-    </Link>
+    </LocaleLink>
 
     <span className="text-gray-400 dark:text-gray-500">|</span>
 
-    <Link
-      href={`/zh${pathname.replace(`/${locale}`, "")}`}
+    <LocaleLink locale="zh"
       className={`text-sm font-medium ${
         locale === "zh"
           ? "text-primary dark:text-white"
@@ -189,7 +189,7 @@ const Header = ({ locale }) => {
       }`}
     >
       ZH
-    </Link>
+    </LocaleLink>
   </div>
               <ThemeToggler />
             </div>

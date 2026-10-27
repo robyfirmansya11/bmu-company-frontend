@@ -1,18 +1,17 @@
+import { pageMetadata } from "@/lib/metadata";
+import { richTextTags } from "@/lib/richTextTags";
+import { getPageTranslations } from "@/lib/getDictionary";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import Link from "next/link";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Career",
-  description: "Explore opportunities to grow your career with us.",
-};
-
 export default async function CareersPage({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  const t = await getPageTranslations((await params).locale, "careersPage");
   const { locale } = await params;
 
   return (
@@ -20,8 +19,8 @@ export default async function CareersPage({
       {/* Breadcrumb */}
       <AnimateOnScroll direction="up" delay={0.1}>
         <Breadcrumb
-          pageName="Career in Our Company"
-          description="Discover who we are and the culture that drives our success."
+          pageName={t("career_in_our_company")}
+          description={t("discover_who_we_are_and_the")}
         />
       </AnimateOnScroll>
 
@@ -31,7 +30,7 @@ export default async function CareersPage({
           <div className="overflow-hidden rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700">
 <img
   src="/images/hero/5384286.jpg"
-  alt="Career Illustration"
+  alt={t("career_illustration")}
   className="w-full h-auto rounded-2xl"
  />
           </div>
@@ -43,33 +42,15 @@ export default async function CareersPage({
         <section className="pt-10 pb-16">
           <div className="container">
             <div className="bg-white dark:bg-dark p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 max-w-4xl mx-auto">
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
-                In our space, few companies are like us. We’re home to some of the
-                smartest, most dedicated people in the world. We care deeply about
-                people and the planet, create innovative solutions for the world’s
-                toughest infrastructure challenges, and own our future as
-                employee-owners.
-                <br /><br />
-                Our professionals act like the company belongs to them – because it
-                does. Every decision we make reflects our commitment to safety, our
-                values, and our people while driving progress for our clients and
-                communities.
-                <br /><br />
-                At Black & Veatch, you’ll enjoy our hybrid work environment that
-                allows you to work in ways that best support your personal and
-                professional success. Here, you’ll be empowered to grow, explore new
-                possibilities, and help create a sustainable future — all while owning
-                your career journey.
-              </p>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">{t.rich("in_our_space_few_companies_are", richTextTags)}</p>
 
               <div className="text-center mt-10">
                 <Link
                   href="https://career.bumimorowaliutama.com"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block bg-primary text-white py-3 px-8 rounded-lg shadow hover:shadow-lg hover:bg-primary/90 hover:-translate-y-1 transition-all"
-                >
-                  Join Us
-                </Link>
+                >{t("join_us")}</Link>
               </div>
             </div>
           </div>
@@ -80,30 +61,22 @@ export default async function CareersPage({
       <AnimateOnScroll direction="up" delay={0.2}>
         <section className="py-16">
           <div className="container text-center">
-            <h2 className="text-3xl font-bold text-dark dark:text-white mb-10">
-              Why Work With Us
-            </h2>
+            <h2 className="text-3xl font-bold text-dark dark:text-white mb-10">{t("why_work_with_us")}</h2>
 
             <div className="grid gap-8 md:grid-cols-3">
               <div className="p-6 bg-white dark:bg-dark border rounded-xl shadow-sm hover:shadow-md transition">
-                <h3 className="text-xl font-semibold mb-3">Employee-Owned Culture</h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  You have a voice. Every team member contributes to our shared success.
-                </p>
+                <h3 className="text-xl font-semibold mb-3">{t("employee_owned_culture")}</h3>
+                <p className="text-gray-600 dark:text-gray-300">{t("you_have_a_voice_every_team")}</p>
               </div>
 
               <div className="p-6 bg-white dark:bg-dark border rounded-xl shadow-sm hover:shadow-md transition">
-                <h3 className="text-xl font-semibold mb-3">Work-Life Balance</h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Hybrid work options that support your personal and professional growth.
-                </p>
+                <h3 className="text-xl font-semibold mb-3">{t("work_life_balance")}</h3>
+                <p className="text-gray-600 dark:text-gray-300">{t("hybrid_work_options_that_support_your")}</p>
               </div>
 
               <div className="p-6 bg-white dark:bg-dark border rounded-xl shadow-sm hover:shadow-md transition">
-                <h3 className="text-xl font-semibold mb-3">Make Global Impact</h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Help shape sustainable infrastructure that improves communities worldwide.
-                </p>
+                <h3 className="text-xl font-semibold mb-3">{t("make_global_impact")}</h3>
+                <p className="text-gray-600 dark:text-gray-300">{t("help_shape_sustainable_infrastructure_that_improves")}</p>
               </div>
             </div>
           </div>
@@ -114,22 +87,21 @@ export default async function CareersPage({
       <AnimateOnScroll direction="up" delay={0.25}>
         <section className="py-20 bg-gray-100 dark:bg-gray-800 rounded-xl mt-16 shadow-inner">
           <div className="container text-center">
-            <h2 className="text-3xl font-bold text-dark dark:text-white mb-4">
-              Ready to Start Your Journey?
-            </h2>
-            <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-              Explore opportunities that allow you to grow, make an impact, and build a meaningful career with us.
-            </p>
+            <h2 className="text-3xl font-bold text-dark dark:text-white mb-4">{t("ready_to_start_your_journey")}</h2>
+            <p className="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">{t("explore_opportunities_that_allow_you_to")}</p>
             <Link
               href="https://career.bumimorowaliutama.com"
               target="_blank"
+                  rel="noopener noreferrer"
               className="inline-block bg-primary text-white py-3 px-8 rounded-lg shadow hover:shadow-lg hover:bg-primary/90 hover:-translate-y-1 transition-all"
-            >
-              Explore Careers
-            </Link>
+            >{t("explore_careers")}</Link>
           </div>
         </section>
       </AnimateOnScroll>
     </>
   );
+}
+
+export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
+  return pageMetadata((await params).locale, "careers");
 }

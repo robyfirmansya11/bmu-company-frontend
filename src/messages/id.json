@@ -1,19 +1,19 @@
 {
   "navbar": {
-  "home": "Beranda",
-  "about_us": "Tentang Kami",
-  "news": "Berita",
-  "contact_us": "Kontak Kami",
-  "careers": "Karir",
-  "pages": "Halaman",
-  "portfolio": "Portofolio, Proyek & Bisnis",
-  "exploration_overview": "Gambaran Umum Eksplorasi Tambang",
-  "nickel_outlook": "Prospek Industri Nikel di Indonesia",
-  "operations": "Operasi Penambangan",
-  "licenses": "Izin & Sertifikasi Perusahaan",
-  "conclusion": "Kesimpulan"
+    "home": "Beranda",
+    "about_us": "Tentang Kami",
+    "news": "Berita",
+    "contact_us": "Kontak Kami",
+    "careers": "Karir",
+    "pages": "Halaman",
+    "portfolio": "Portofolio, Proyek & Bisnis",
+    "exploration_overview": "Gambaran Umum Eksplorasi Tambang",
+    "nickel_outlook": "Prospek Industri Nikel di Indonesia",
+    "operations": "Operasi Penambangan",
+    "licenses": "Izin & Sertifikasi Perusahaan",
+    "conclusion": "Kesimpulan",
+    "toggle_menu": "Buka/tutup navigasi"
   },
-
   "footer": {
     "company_desc": "Temukan pembaruan, berita, dan informasi resmi perusahaan melalui akun media sosial kami.",
     "useful_links": "Tautan Berguna",
@@ -22,12 +22,10 @@
     "contact_us": "Kontak",
     "about_us": "Tentang Kami",
     "careers": "Karir",
-
     "choose_language": "Pilih Bahasa",
     "english": "Bahasa Inggris",
     "indonesian": "Bahasa Indonesia",
     "chinese": "中文（简体）",
-
     "more_pages": "Halaman Lainnya",
     "portfolio": "Portofolio, Proyek & Bisnis",
     "mining_overview": "Gambaran Eksplorasi Tambang",
@@ -35,7 +33,210 @@
     "mining_operations": "Operasi Pertambangan",
     "licenses": "Lisensi & Sertifikasi Utama",
     "conclusion": "Kesimpulan",
-
     "copyright": "Hak Cipta - Semua hak dilindungi."
+  },
+  "hero": {
+    "left_decoration": "Dekorasi kiri",
+    "right_decoration": "Dekorasi kanan",
+    "since_its_establishment_pt_bumi_morowali": "Sejak didirikan, PT Bumi Morowali Utama berperan penting dalam penyediaan sumber daya mineral untuk pembangunan nasional. Berbekal pengalaman yang luas, kami terus berkembang menjadi perusahaan pertambangan yang berkomitmen pada profesionalisme, kemajuan teknologi, dan praktik berkelanjutan.",
+    "learn_more": "🔥 Selengkapnya",
+    "contact_us": "Hubungi Kami"
+  },
+  "overview": {
+    "about_us": "Tentang Kami",
+    "pt_bumi_morowali_utama_bmu_is": "<b>PT Bumi Morowali Utama (BMU)</b> adalah perseroan terbatas yang terdaftar di Indonesia dan berkantor pusat di Jakarta. Perusahaan bergerak terutama dalam eksplorasi, penambangan, dan penjualan bijih nikel. Konsesi pertambangan BMU terletak di Kabupaten Morowali, Sulawesi Tengah, dengan luas 1.963 hektar. Wilayah ini merupakan salah satu kawasan kaya sumber daya di Indonesia, yang dikenal dengan cadangan nikel terkonsentrasi serta kegiatan pertambangan dan peleburan yang aktif.",
+    "company_name_pt_bumi_morowali_utama": "Nama Perusahaan: <b>PT Bumi Morowali Utama</b><br></br>Badan Hukum: Perseroan Terbatas (PT)<br></br>Usaha Utama: Penambangan bijih nikel, penjualan, dan kerja sama rantai pasok<br></br>Izin: IUP Operasi Produksi<br></br>Alamat: Soho @Podomoro City Lantai 30 Unit 02, Jl. Letjen S. Parman Kav. 28, Jakarta Barat 11470",
+    "bmu_s_mining_resources_primarily_consist": "Sumber daya pertambangan BMU terutama berupa bijih nikel laterit, yang mencakup lapisan limonit dan saprolit. Sebagian besar produksinya dipasok ke smelter dalam negeri di Indonesia.",
+    "about_us_9": "Tentang Kami"
+  },
+  "vision": {
+    "vision_and_mission": "Visi dan Misi",
+    "pt_bumi_morowali_utama_was_established": "PT Bumi Morowali Utama didirikan pada 2011 dan sejak saat itu beroperasi di Indonesia. Perusahaan menyediakan berbagai produk dan layanan untuk sejumlah industri, termasuk otomotif, mesin pertanian, petrokimia, serta pemeliharaan dan dukungan pelanggan.",
+    "more_about_us": "Selengkapnya Tentang Kami",
+    "company_video_preview": "Pratinjau video perusahaan",
+    "play_company_video": "Putar video perusahaan"
+  },
+  "partners": {
+    "partners_and_clients": "Mitra dan Klien"
+  },
+  "contact": {
+    "contact_us": "Hubungi Kami",
+    "full_name": "Nama Lengkap",
+    "email": "Email",
+    "message": "Pesan",
+    "send_message": "Kirim Pesan",
+    "success": "Berhasil!",
+    "sent": "Pesan Anda berhasil dikirim.",
+    "failed": "Gagal",
+    "failure": "Pesan belum dapat dikirim. Silakan coba lagi.",
+    "ok": "OK",
+    "subject": "Kontak dari Website"
+  },
+  "location": {
+    "our_location": "Lokasi Kami",
+    "visit_our_location_on_the_map": "Lihat lokasi kami pada peta di bawah ini."
+  },
+  "about": {
+    "about_the_company": "Tentang Perusahaan",
+    "pt_bumi_morowali_utama_was_established": "PT Bumi Morowali Utama didirikan pada 2011 dan sejak saat itu beroperasi di Indonesia. Perusahaan menyediakan berbagai produk dan layanan untuk sejumlah industri, termasuk otomotif, mesin pertanian, petrokimia, serta pemeliharaan dan dukungan pelanggan.",
+    "vision": "Visi",
+    "to_become_a_trusted_strategic_partner": "Menjadi mitra strategis terpercaya dalam industri pertambangan nikel dan pemasok utama bagi sektor energi baru serta baja tahan karat. Visi kami berlandaskan keberlanjutan, profesionalisme, dan komitmen untuk memajukan pengembangan energi masa depan.",
+    "mission": "Misi",
+    "bmu_mining_operations": "Operasi pertambangan BMU",
+    "mission_0": "Membangun kemitraan jangka panjang yang saling menguntungkan dengan perusahaan dalam dan luar negeri.",
+    "mission_1": "Terus meningkatkan kapasitas produksi bijih nikel dengan tetap memastikan standar kualitas tertinggi.",
+    "mission_2": "Mengelola operasi pertambangan secara profesional dengan fokus pada keselamatan, efisiensi, dan keberlanjutan.",
+    "mission_3": "Berkontribusi aktif pada pengembangan industri pertambangan melalui dukungan pelatihan, pendidikan, dan pengembangan sumber daya manusia.",
+    "mission_4": "Menciptakan nilai tambah bagi masyarakat dan lingkungan melalui praktik pertambangan yang bertanggung jawab."
+  },
+  "profile": {
+    "company_profile": "Profil Perusahaan",
+    "bmu_company_site": "Lokasi perusahaan BMU",
+    "company_name_pt_bumi_morowali_utama": "<strong>Nama Perusahaan:</strong> PT Bumi Morowali Utama",
+    "legal_entity_limited_liability_company_pt": "<strong>Badan Hukum:</strong> Perseroan Terbatas (PT)",
+    "main_business_nickel_ore_mining_sales": "<strong>Usaha Utama:</strong> Penambangan bijih nikel, penjualan, dan kerja sama rantai pasok",
+    "license_iup_operasi_produksi": "<strong>Izin:</strong> IUP Operasi Produksi",
+    "address_soho_podomoro_city_lantai_30": "<strong>Alamat:</strong> Soho @Podomoro City Lantai 30 Unit 02, Jl. Letjen S. Parman Kav. 28,<br></br> Kel. Tanjung Duren Selatan, Kec. Grogol Petamburan, Jakarta Barat 11470",
+    "introduction_to_bmu_nickel_mining_company": "Pengenalan Perusahaan Pertambangan Nikel BMU",
+    "pt_bumi_morowali_utama_hereinafter_referred": "PT Bumi Morowali Utama (selanjutnya disebut BMU) adalah perseroan terbatas yang terdaftar di Indonesia dan berkantor pusat di Jakarta. Perusahaan bergerak terutama dalam eksplorasi, penambangan, dan penjualan bijih nikel. Konsesi pertambangan BMU terletak di Kabupaten Morowali, Sulawesi Tengah, dengan luas 1.963 hektar. Wilayah ini merupakan salah satu kawasan kaya sumber daya di Indonesia, yang dikenal dengan cadangan nikel terkonsentrasi serta kegiatan pertambangan dan peleburan yang aktif.",
+    "bmu_s_mining_resources_primarily_consist": "Sumber daya pertambangan BMU terutama berupa bijih nikel laterit, yang mencakup lapisan limonit dan saprolit. Sebagian besar produksinya dipasok ke smelter dalam negeri di Indonesia."
+  },
+  "portfolioPage": {
+    "projects_and_business_portfolio": "Portofolio Proyek dan Bisnis",
+    "key_projects": "Proyek Utama",
+    "nickel_ore_trading_cooperation_with_indonesia": "Kerja sama perdagangan bijih nikel dengan perusahaan IPP terkemuka di Indonesia, <strong>PT Mineral Maju Sejahtera</strong>.",
+    "mining_contracting_cooperation_with_an_experienced": "Kerja sama kontraktor pertambangan dengan mitra berpengalaman, <strong>PT Hebei Geologikal Indonesia</strong>.",
+    "nickel_ore_supply_cooperation_with_a": "Kerja sama pasokan bijih nikel dengan perusahaan smelter terkemuka, <strong>PT Obsidian Stainless Steel</strong>.",
+    "project_1": "Proyek 1",
+    "project_2": "Proyek 2",
+    "project_3": "Proyek 3",
+    "milestones_and_achievements": "Tonggak dan Pencapaian",
+    "nickel_ore_production_of_approximately_100": "Produksi bijih nikel sekitar <strong>±100.000 WMT per bulan</strong>",
+    "gold_sponsor_in_the_miner_training": "<strong>Sponsor Emas</strong> dalam program <em>“Miner Training”</em> pada 2025.",
+    "bmu_mine_location_map": "Peta Lokasi Tambang BMU"
+  },
+  "eksplorasiPage": {
+    "mining_exploration_overview": "Ikhtisar Eksplorasi Pertambangan",
+    "in_december_2022_pt_hebei_geologikal": "Pada Desember 2022, <strong>PT Hebei Geologikal Indonesia (HGI)</strong> menyelesaikan survei geologi dan menerbitkan laporan. Temuan utamanya adalah sebagai berikut:",
+    "exploration_areas_and_works": "Wilayah dan Pekerjaan Eksplorasi",
+    "the_exploration_company_delineated_an_area": "Perusahaan eksplorasi menetapkan area seluas 50 hektar untuk survei geologi, yang dibagi menjadi dua zona eksplorasi (B4W dan B1W-B2W). Pekerjaan utama yang diselesaikan meliputi survei topografi seluas 0,95 km²; survei profil sepanjang 17,86 km; survei geologi khusus seluas 0,95 km²; pembuatan 253 lubang bor; analisis dasar terhadap 4.973 sampel; serta pengukuran 253 titik teknik. Berdasarkan eksplorasi di wilayah tersebut, estimasi sumber daya bijih nikel (Ni ≥ 1,30%, terkendali + terduga) mencapai 2,726 juta ton bijih dengan kadar rata-rata 1,49%. Sumber daya terkendali: 1,907 juta ton, kadar rata-rata 1,49%; sumber daya terduga: 0,819 juta ton, kadar rata-rata 1,49%.",
+    "according_to_the_latest_2025_exploration": "Menurut data eksplorasi terbaru tahun 2025, dalam wilayah seluas 212,99 hektar:",
+    "at_an_average_nickel_grade_of": "Pada kadar nikel rata-rata 1,0%, estimasi cadangan mencapai 29,81 juta ton bijih.",
+    "at_an_average_nickel_grade_of_57": "Pada kadar nikel rata-rata 1,5%, estimasi cadangan mencapai 9,02 juta ton bijih.",
+    "nickel_resource_estimate_2022": "Estimasi Sumber Daya Nikel (2022)",
+    "based_on_exploration_in_the_designated": "Berdasarkan hasil eksplorasi di area yang ditentukan, perkiraan sumber daya bijih nikel (<strong>Ni ≥ 1.30%</strong>, terkendali + terduga) mencapai <strong>2,726 juta ton bijih</strong> dengan kadar rata-rata <strong>1.49%</strong>. Rinciannya sebagai berikut:",
+    "controlled_resources_1_907_million_tons": "Sumber daya terkendali: <strong>1,907 juta ton</strong>, kadar rata-rata <strong>1.49%</strong>",
+    "inferred_resources_0_819_million_tons": "Sumber daya terduga: <strong>0,819 juta ton</strong>, kadar rata-rata <strong>1.49%</strong>",
+    "detailed_calculations_are_provided_below": "Perhitungan terperinci disajikan di bawah ini:",
+    "mining_exploration_illustration": "Ilustrasi eksplorasi tambang"
+  },
+  "operasiPage": {
+    "mining_operations": "Operasi Pertambangan",
+    "in_the_years_2023_and_2024": "Pada <strong>2023 dan 2024</strong>, <strong>BMU</strong> menambang dan menjual total <strong>820.000 ton bijih nikel</strong>. Bijih ini memiliki kadar rata-rata sekitar <strong>1,5%</strong> dan rasio silika-magnesium <strong>(Si/Mg) sekitar 1,8</strong>, sehingga tergolong bijih nikel berkadar menengah dengan rasio Si/Mg rendah.",
+    "bmu_also_has_a_dedicated_jetty": "<strong>BMU</strong> juga memiliki dermaga khusus di pesisir. Fasilitas ini memungkinkan tongkang bersandar dan memuat bijih nikel secara efisien untuk pengiriman.",
+    "photos_of_the_mining_area": "Foto Area Pertambangan",
+    "photos_of_the_jetty_area": "Foto Area Dermaga",
+    "mining_image": "Area tambang {number}",
+    "jetty_image": "Area dermaga {number}"
+  },
+  "prospekPage": {
+    "outlook_for_indonesia_s_nickel_industry": "Prospek Industri Nikel Indonesia",
+    "1_global_demand_drivers": "1. Pendorong Permintaan Global",
+    "new_energy_batteries_nickel_is_a": "<strong>Baterai Energi Baru:</strong> Nikel merupakan bahan baku utama baterai litium terner (NCM/NCA). Seiring pesatnya pertumbuhan kendaraan listrik (EV), permintaan global terhadap material katoda berkadar nikel tinggi terus meningkat.",
+    "stainless_steel_industry_currently_around_70": "<strong>Industri Baja Tahan Karat:</strong> Saat ini, sekitar 70% konsumsi nikel global digunakan untuk produksi baja tahan karat, yang tetap menjadi pendorong utama permintaan. Sebagai produsen baja tahan karat terbesar di dunia, Tiongkok sangat bergantung pada bijih nikel Indonesia.",
+    "2_indonesia_s_policy_advantages": "2. Keunggulan Kebijakan Indonesia",
+    "indonesia_holds_the_world_s_largest": "Indonesia memiliki cadangan dan produksi nikel terbesar di dunia, dengan lebih dari <strong>22% cadangan global</strong>.",
+    "the_government_has_implemented_a_nickel": "Pemerintah menerapkan <strong>larangan ekspor bijih nikel</strong> untuk mendorong peleburan dalam negeri serta pengembangan industri nickel pig iron (NPI), baja tahan karat, dan baterai energi baru.",
+    "significant_investment_by_chinese_enterprises_in": "Investasi besar perusahaan Tiongkok pada smelter dan pabrik baterai menciptakan efek klaster industri yang kuat, antara lain di kawasan industri <strong>IMIP</strong> dan <strong>Weda Bay</strong>.",
+    "3_investment_and_market_opportunities": "3. Peluang Investasi dan Pasar",
+    "new_energy_wave_with_the_rising": "<strong>Gelombang Energi Baru:</strong> Seiring meningkatnya penetrasi kendaraan listrik di seluruh dunia, permintaan nikel untuk baterai kendaraan diproyeksikan meningkat 3–4 kali lipat pada 2030 dibandingkan 2020.",
+    "industrial_clustering_sulawesi_and_maluku_are": "<strong>Klaster Industri:</strong> Sulawesi dan Maluku sedang mengembangkan rantai industri nikel yang lengkap. Lokasi strategis <strong>BMU</strong> di pusat wilayah ini memberikan keunggulan geografis yang signifikan.",
+    "capital_inflows_major_companies_from_china": "<strong>Arus Modal:</strong> Perusahaan besar dari Tiongkok (Tsingshan, Huayou), Korea Selatan (LG), dan Eropa (BASF) telah berinvestasi di Indonesia, menunjukkan permintaan pasokan bijih nikel yang kuat dan terus bertumbuh.",
+    "indonesian_nickel_industry_outlook": "Prospek Industri Nikel Indonesia"
+  },
+  "izinPage": {
+    "company_key_licenses_and_certifications": "Izin dan Sertifikasi Utama Perusahaan",
+    "attached_are_the_company_s_principal": "Berikut izin dan sertifikasi utama perusahaan, termasuk IUPOP, IPPKH, RKAB, dan lainnya.",
+    "pdf_viewer": "Penampil PDF",
+    "close": "Tutup dokumen",
+    "document_0": "1. Akta Pendirian",
+    "document_1": "2. SKMENKEH (Akta Pendirian No. 23)",
+    "document_2": "3. Nomor Induk Berusaha (NIB)",
+    "document_3": "4. Akta Pernyataan Keputusan Rapat Umum Pemegang Saham Luar Biasa",
+    "document_4": "5. SK AHU Penerimaan Pemberitahuan Perubahan Data Perseroan",
+    "document_5": "6. IUP Operasi Produksi",
+    "document_6": "7. Izin Pinjam Pakai",
+    "document_7": "8. Nomor Pokok Wajib Pajak (NPWP)",
+    "document_8": "9. Surat Keterangan Terdaftar (SKT)"
+  },
+  "kesimpulanPage": {
+    "conclusion": "Kesimpulan",
+    "as_a_nickel_mining_company_based": "Sebagai perusahaan pertambangan nikel yang berbasis di Sulawesi Tengah, Indonesia, <strong>PT Bumi Morowali Utama (BMU)</strong> memiliki posisi yang baik untuk memanfaatkan pertumbuhan berkelanjutan industri energi baru dan baja tahan karat global, berkat lokasi strategis dan sumber daya yang melimpah.",
+    "bmu_remains_committed_to_strengthening_lawful": "BMU terus berkomitmen memperkuat operasi pertambangan yang sah dan patuh terhadap peraturan, memajukan teknologi eksplorasi dan penambangan, serta aktif melindungi lingkungan setempat. Perusahaan juga berupaya membangun kemitraan yang stabil dengan perusahaan peleburan dan baterai di sektor hilir untuk mendukung pembangunan jangka panjang yang berkelanjutan.",
+    "bmu_mine": "Tambang BMU"
+  },
+  "careersPage": {
+    "career_in_our_company": "Karier di Perusahaan Kami",
+    "discover_who_we_are_and_the": "Kenali kami dan budaya yang mendorong keberhasilan kami.",
+    "career_illustration": "Ilustrasi Karier",
+    "in_our_space_few_companies_are": "Di bidang kami, hanya sedikit perusahaan yang seperti kami. Kami menjadi tempat bagi orang-orang cerdas dan berdedikasi. Kami peduli terhadap manusia dan bumi, menciptakan solusi inovatif untuk tantangan infrastruktur paling berat, serta menentukan masa depan sebagai karyawan sekaligus pemilik.<br></br><br></br>Para profesional kami bertindak layaknya pemilik perusahaan—karena memang demikian. Setiap keputusan mencerminkan komitmen kami terhadap keselamatan, nilai-nilai, dan karyawan, sekaligus mendorong kemajuan bagi klien dan masyarakat.<br></br><br></br>Di Black & Veatch, Anda akan menikmati lingkungan kerja hibrida yang mendukung keberhasilan pribadi dan profesional. Anda diberdayakan untuk berkembang, menjelajahi peluang baru, dan membantu menciptakan masa depan berkelanjutan sambil mengelola perjalanan karier Anda.",
+    "join_us": "Bergabunglah dengan Kami",
+    "why_work_with_us": "Mengapa Bekerja Bersama Kami",
+    "employee_owned_culture": "Budaya Kepemilikan Karyawan",
+    "you_have_a_voice_every_team": "Pendapat Anda berarti. Setiap anggota tim berkontribusi terhadap keberhasilan bersama.",
+    "work_life_balance": "Keseimbangan Kerja dan Kehidupan",
+    "hybrid_work_options_that_support_your": "Pilihan kerja hibrida yang mendukung perkembangan pribadi dan profesional Anda.",
+    "make_global_impact": "Memberikan Dampak Global",
+    "help_shape_sustainable_infrastructure_that_improves": "Bantu membangun infrastruktur berkelanjutan yang meningkatkan kualitas hidup masyarakat di seluruh dunia.",
+    "ready_to_start_your_journey": "Siap Memulai Perjalanan Anda?",
+    "explore_opportunities_that_allow_you_to": "Jelajahi peluang untuk berkembang, memberikan dampak, dan membangun karier yang bermakna bersama kami.",
+    "explore_careers": "Jelajahi Peluang Karier"
+  },
+  "blogPage": {
+    "news_and_company_updates": "Berita dan Kabar Perusahaan",
+    "stay_updated_with_the_latest_company": "Ikuti informasi terbaru dari perusahaan kami."
+  },
+  "contactPage": {
+    "contact_us": "Hubungi Kami",
+    "we_are_ready_to_assist_you": "Kami siap membantu Anda memperoleh informasi tentang layanan, kemitraan, atau pertanyaan terkait perusahaan kami."
+  },
+  "aboutPage": {
+    "about_us": "Tentang Kami",
+    "pt_bumi_morowali_utama_is_committed": "PT. Bumi Morowali Utama berkomitmen menjadi mitra terpercaya dalam mendukung kemajuan industri melalui inovasi, profesionalisme, dan dedikasi yang kuat. Kami terus berkembang dengan mengutamakan kualitas, keselamatan kerja, serta tanggung jawab terhadap lingkungan dan masyarakat sekitar."
+  },
+  "careerDetail": {
+    "job_vacancy_details": "Detail lowongan pekerjaan",
+    "location": "📍 Lokasi",
+    "job_type": "💼 Jenis Pekerjaan",
+    "published_at": "🗓 Tanggal Publikasi",
+    "job_description": "Deskripsi Pekerjaan",
+    "requirements": "Persyaratan",
+    "apply_now": "Lamar Sekarang"
+  },
+  "newsDetail": {
+    "post_not_found": "Artikel tidak ditemukan",
+    "tags": "Tag:",
+    "share_this_post": "Bagikan artikel ini:",
+    "by": "Oleh {author}"
+  },
+  "newsList": {
+    "no_data": "Tidak ada data",
+    "no_news_available_yet": "Belum ada berita tersedia",
+    "we_have_not_published_any_news": "Kami belum mempublikasikan berita terbaru. Silakan kembali lagi nanti.",
+    "previous": "← Sebelumnya",
+    "next": "Berikutnya →",
+    "pagination": "Halaman {current} / {total}"
+  },
+  "newsPreview": {
+    "latest_news": "Berita Terbaru",
+    "view_all_news": "Lihat Semua Berita →"
+  },
+  "common": {
+    "theme": "Ganti tema warna",
+    "top": "Kembali ke atas",
+    "notFound": "Maaf, halaman tidak ditemukan",
+    "missing": "Halaman yang Anda cari mungkin telah dipindahkan, dihapus, atau tidak tersedia.",
+    "home": "Kembali ke Beranda",
+    "description": "PT. Bumi Morowali Utama — mitra terpercaya dalam mendukung kemajuan industri."
   }
 }

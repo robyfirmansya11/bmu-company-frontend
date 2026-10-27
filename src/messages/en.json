@@ -1,20 +1,19 @@
 {
   "navbar": {
-  "home": "Home",
-  "about_us": "About Us",
-  "news": "News",
-  "contact_us": "Contact Us",
-  "careers": "Careers",
-  
-  "pages": "Pages",
-  "portfolio": "Portfolio, Projects & Businesses",
-  "exploration_overview": "Overview of Mining Exploration",
-  "nickel_outlook": "Nickel Industry Outlook in Indonesia",
-  "operations": "Mining Operations",
-  "licenses": "Key Company Licenses and Certifications",
-  "conclusion": "Conclusion"
+    "home": "Home",
+    "about_us": "About Us",
+    "news": "News",
+    "contact_us": "Contact Us",
+    "careers": "Careers",
+    "pages": "Pages",
+    "portfolio": "Portfolio, Projects & Businesses",
+    "exploration_overview": "Overview of Mining Exploration",
+    "nickel_outlook": "Nickel Industry Outlook in Indonesia",
+    "operations": "Mining Operations",
+    "licenses": "Key Company Licenses and Certifications",
+    "conclusion": "Conclusion",
+    "toggle_menu": "Toggle navigation"
   },
-
   "footer": {
     "company_desc": "Find updates, news, and official company information through our social media accounts.",
     "useful_links": "Useful Links",
@@ -23,12 +22,10 @@
     "contact_us": "Contact Us",
     "about_us": "About Us",
     "careers": "Careers",
-
     "choose_language": "Choose Language",
     "english": "English",
     "indonesian": "Indonesian",
     "chinese": "Chinese",
-
     "more_pages": "More Pages",
     "portfolio": "Portfolio, Projects & Business",
     "mining_overview": "Mining Exploration Overview",
@@ -37,5 +34,209 @@
     "licenses": "Key Licenses & Certifications",
     "conclusion": "Conclusion",
     "copyright": "Copyright - All rights reserved."
+  },
+  "hero": {
+    "left_decoration": "Left decoration",
+    "right_decoration": "Right decoration",
+    "since_its_establishment_pt_bumi_morowali": "Since its establishment, PT Bumi Morowali Utama has been a key contributor to the provision of mineral resources for national development. Leveraging our extensive experience, we have steadily evolved into a mining company committed to professionalism, technological advancement, and sustainable practices.",
+    "learn_more": "🔥 Learn More",
+    "contact_us": "Contact Us"
+  },
+  "overview": {
+    "about_us": "About Us",
+    "pt_bumi_morowali_utama_bmu_is": "<b>PT Bumi Morowali Utama (BMU)</b> is a limited liability company (Perseroan Terbatas) registered in Indonesia and headquartered in Jakarta. The company is primarily engaged in the exploration, mining, and sales of nickel ore resources. BMU’s mining concession is located in Morowali Regency, Central Sulawesi (Kabupaten Morowali, Sulawesi Tengah), covering an area of 1,963 hectares. This region is among the most resource-rich areas in Indonesia, known for its concentrated nickel reserves and active mining and smelting operations.",
+    "company_name_pt_bumi_morowali_utama": "Company Name: <b>PT Bumi Morowali Utama</b> <br></br> Legal Entity: Limited Liability Company (Perseroan Terbatas) <br></br> Main Business: Nickel ore mining, sales, and supply chain cooperation <br></br> License: IUP Operasi Produksi <br></br> Address: Soho @Podomoro City Lantai 30 Unit 02, Jl. Letjen S. Parman Kav. 28, Jakarta Barat 11470",
+    "bmu_s_mining_resources_primarily_consist": "BMU’s mining resources primarily consist of laterite nickel ore, including both the limonite layer and the saprolite layer, with the majority of production supplied to domestic smelters in Indonesia.",
+    "about_us_9": "About Us"
+  },
+  "vision": {
+    "vision_and_mission": "Vision and Mission",
+    "pt_bumi_morowali_utama_was_established": "PT Bumi Morowali Utama was established in 2011 and has since been operating in Indonesia. The company provides a wide range of products and services across multiple industries, including automotive, agricultural machinery, petrochemicals, as well as maintenance and customer support.",
+    "more_about_us": "More About Us",
+    "company_video_preview": "Company video preview",
+    "play_company_video": "Play company video"
+  },
+  "partners": {
+    "partners_and_clients": "Partners and Clients"
+  },
+  "contact": {
+    "contact_us": "Contact Us",
+    "full_name": "Full Name",
+    "email": "Email",
+    "message": "Message",
+    "send_message": "Send Message",
+    "success": "Success!",
+    "sent": "Your message has been sent successfully.",
+    "failed": "Failed",
+    "failure": "Unable to send your message. Please try again.",
+    "ok": "OK",
+    "subject": "Contact from Website"
+  },
+  "location": {
+    "our_location": "Our Location",
+    "visit_our_location_on_the_map": "Visit our location on the map below."
+  },
+  "about": {
+    "about_the_company": "About the Company",
+    "pt_bumi_morowali_utama_was_established": "PT Bumi Morowali Utama was established in 2011 and has since been operating in Indonesia. The company provides a wide range of products and services across multiple industries, including automotive, agricultural machinery, petrochemicals, as well as maintenance and customer support.",
+    "vision": "Vision",
+    "to_become_a_trusted_strategic_partner": "To become a trusted strategic partner in the nickel mining industry, serving as a key supplier to the new energy and stainless steel sectors. Our vision is driven by sustainability, professionalism, and a commitment to advancing future energy development.",
+    "mission": "Mission",
+    "bmu_mining_operations": "BMU mining operations",
+    "mission_0": "Establish long-term, mutually beneficial partnerships with domestic and international companies.",
+    "mission_1": "Continuously enhance nickel ore production capacity while ensuring the highest quality standards.",
+    "mission_2": "Manage mining operations professionally with a focus on safety, efficiency, and sustainability.",
+    "mission_3": "Actively contribute to the development of the mining industry by supporting training, education, and human resource development.",
+    "mission_4": "Create added value for communities and the environment through responsible mining practices."
+  },
+  "profile": {
+    "company_profile": "Company Profile",
+    "bmu_company_site": "BMU company site",
+    "company_name_pt_bumi_morowali_utama": "<strong>Company Name:</strong> PT Bumi Morowali Utama",
+    "legal_entity_limited_liability_company_pt": "<strong>Legal Entity:</strong> Limited Liability Company (PT)",
+    "main_business_nickel_ore_mining_sales": "<strong>Main Business:</strong> Nickel ore mining, sales, and supply chain cooperation",
+    "license_iup_operasi_produksi": "<strong>License:</strong> IUP Operasi Produksi",
+    "address_soho_podomoro_city_lantai_30": "<strong>Address:</strong> Soho @Podomoro City Lantai 30 Unit 02, Jl. Letjen S. Parman Kav. 28,<br></br> Kel. Tanjung Duren Selatan, Kec. Grogol Petamburan, Jakarta Barat 11470",
+    "introduction_to_bmu_nickel_mining_company": "Introduction to BMU Nickel Mining Company",
+    "pt_bumi_morowali_utama_hereinafter_referred": "PT Bumi Morowali Utama (hereinafter referred to as BMU) is a limited liability company (Perseroan Terbatas) registered in Indonesia and headquartered in Jakarta. The company is primarily engaged in the exploration, mining, and sales of nickel ore resources. BMU’s mining concession is located in Morowali Regency, Central Sulawesi (Kabupaten Morowali, Sulawesi Tengah), covering an area of 1,963 hectares. This region is among the most resource-rich areas in Indonesia, known for its concentrated nickel reserves and active mining and smelting operations.",
+    "bmu_s_mining_resources_primarily_consist": "BMU’s mining resources primarily consist of laterite nickel ore, including both the limonite layer and the saprolite layer, with the majority of production supplied to domestic smelters in Indonesia."
+  },
+  "portfolioPage": {
+    "projects_and_business_portfolio": "Projects and Business Portfolio",
+    "key_projects": "Key Projects",
+    "nickel_ore_trading_cooperation_with_indonesia": "Nickel ore trading cooperation with Indonesia’s leading IPP company, <strong>PT Mineral Maju Sejahtera</strong>.",
+    "mining_contracting_cooperation_with_an_experienced": "Mining contracting cooperation with an experienced partner, <strong>PT Hebei Geologikal Indonesia</strong>.",
+    "nickel_ore_supply_cooperation_with_a": "Nickel ore supply cooperation with a well-established smelter company, <strong>PT Obsidian Stainless Steel</strong>.",
+    "project_1": "Project 1",
+    "project_2": "Project 2",
+    "project_3": "Project 3",
+    "milestones_and_achievements": "Milestones and Achievements",
+    "nickel_ore_production_of_approximately_100": "Nickel ore production of approximately <strong>±100,000 WMT per month</strong>",
+    "gold_sponsor_in_the_miner_training": "<strong>Gold Sponsor</strong> in the <em>“Miner Training”</em> program in 2025.",
+    "bmu_mine_location_map": "BMU Mine Location Map"
+  },
+  "eksplorasiPage": {
+    "mining_exploration_overview": "Mining Exploration Overview",
+    "in_december_2022_pt_hebei_geologikal": "In December 2022, <strong>PT Hebei Geologikal Indonesia (HGI)</strong> completed a geological survey and issued a report. The main findings are as follows:",
+    "exploration_areas_and_works": "Exploration Areas and Works",
+    "the_exploration_company_delineated_an_area": "The exploration company delineated an area of 50 hectares for geological survey work, divided into two exploration zones (B4W and B1W-B2W). The primary works completed included: Topographic survey covering 0.95 km²; Profile survey totaling 17.86 km; Specialized geological survey covering 0.95 km²; Construction of 253 drill holes; Basic analysis of 4,973 samples; Measurement of 253 engineering points. Based on the exploration within the designated area, the estimated nickel ore resources (Ni ≥ 1.30%, controlled + inferred) amount to 2.726 million tons of ore, with an average grade of 1.49%. Controlled resources: 1.907 million tons, average grade 1.49%; Inferred resources: 0.819 million tons, average grade 1.49%.",
+    "according_to_the_latest_2025_exploration": "According to the latest 2025 exploration data, within an area of 212.99 hectares:",
+    "at_an_average_nickel_grade_of": "At an average nickel grade of 1.0%, the estimated reserves amount to 29.81 million tons of ore.",
+    "at_an_average_nickel_grade_of_57": "At an average nickel grade of 1.5%, the estimated reserves amount to 9.02 million tons of ore.",
+    "nickel_resource_estimate_2022": "Nickel Resource Estimate (2022)",
+    "based_on_exploration_in_the_designated": "Based on exploration in the designated area, estimated nickel ore resources (<strong>Ni ≥ 1.30%</strong>, controlled + inferred) total <strong>2.726 million tons of ore</strong>, with an average grade of <strong>1.49%</strong>. The breakdown is as follows:",
+    "controlled_resources_1_907_million_tons": "Controlled resources: <strong>1.907 million tons</strong>, average grade <strong>1.49%</strong>",
+    "inferred_resources_0_819_million_tons": "Inferred resources: <strong>0.819 million tons</strong>, average grade <strong>1.49%</strong>",
+    "detailed_calculations_are_provided_below": "Detailed calculations are provided below:",
+    "mining_exploration_illustration": "Mining exploration illustration"
+  },
+  "operasiPage": {
+    "mining_operations": "Mining Operations",
+    "in_the_years_2023_and_2024": "In the years <strong>2023 and 2024</strong>, <strong>BMU</strong> mined and sold a total of <strong>820,000 tons of nickel ore</strong>. This ore has an average grade of about <strong>1.5%</strong> and a silica-magnesium ratio <strong>(Si/Mg) of about 1.8</strong>, classifying it as medium-grade nickel ore with a low Si/Mg ratio.",
+    "bmu_also_has_a_dedicated_jetty": "<strong>BMU</strong> also has a dedicated jetty located on the coast. This facility allows barges to dock and efficiently load nickel ore for shipment.",
+    "photos_of_the_mining_area": "Photos of the Mining Area",
+    "photos_of_the_jetty_area": "Photos of the Jetty Area",
+    "mining_image": "Mining area {number}",
+    "jetty_image": "Jetty area {number}"
+  },
+  "prospekPage": {
+    "outlook_for_indonesia_s_nickel_industry": "Outlook for Indonesia’s Nickel Industry",
+    "1_global_demand_drivers": "1. Global Demand Drivers",
+    "new_energy_batteries_nickel_is_a": "<strong>New Energy Batteries:</strong> Nickel is a core raw material in ternary lithium batteries (NCM/NCA). With the rapid growth of electric vehicles (EVs), global demand for high-nickel cathode materials continues to rise.",
+    "stainless_steel_industry_currently_around_70": "<strong>Stainless Steel Industry:</strong> Currently, around 70% of global nickel consumption is used in stainless steel production, which remains the primary demand driver. As the world’s largest stainless steel producer, China has a high dependency on Indonesian nickel ore.",
+    "2_indonesia_s_policy_advantages": "2. Indonesia’s Policy Advantages",
+    "indonesia_holds_the_world_s_largest": "Indonesia holds the world’s largest nickel reserves and production, accounting for more than <strong>22% of global reserves</strong>.",
+    "the_government_has_implemented_a_nickel": "The government has implemented <strong>a nickel ore export ban</strong> encouraging domestic smelting and fostering the development of nickel pig iron (NPI), stainless steel, and new energy battery industries.",
+    "significant_investment_by_chinese_enterprises_in": "Significant investment by Chinese enterprises in smelting and battery plants has created a strong industrial cluster effect (notable examples include the <strong>IMIP</strong> and <strong>Weda Bay Industrial Parks</strong>).",
+    "3_investment_and_market_opportunities": "3. Investment and Market Opportunities",
+    "new_energy_wave_with_the_rising": "<strong>New Energy Wave:</strong> With the rising penetration of electric vehicles worldwide, demand for nickel used in power batteries is projected to increase by 3–4 times by 2030 compared to 2020.",
+    "industrial_clustering_sulawesi_and_maluku_are": "<strong>Industrial Clustering:</strong> Sulawesi and Maluku are developing a complete nickel industry chain. The strategic location of <strong>BMU</strong> in the heart of this region provides a significant geographical advantage.",
+    "capital_inflows_major_companies_from_china": "<strong>Capital Inflows:</strong> Major companies from China (Tsingshan, Huayou), South Korea (LG), and Europe (BASF) have already invested in Indonesia, signaling strong and growing demand for nickel ore supply.",
+    "indonesian_nickel_industry_outlook": "Indonesian Nickel Industry Outlook"
+  },
+  "izinPage": {
+    "company_key_licenses_and_certifications": "Company Key Licenses and Certifications",
+    "attached_are_the_company_s_principal": "Attached are the company’s principal licenses and certifications, including IUPOP, IPPKH, RKAB, and others.",
+    "pdf_viewer": "PDF Viewer",
+    "close": "Close document",
+    "document_0": "1. Deed of Establishment",
+    "document_1": "2. Ministry of Justice Decree (Deed of Establishment No. 23)",
+    "document_2": "3. Business Identification Number (NIB)",
+    "document_3": "4. Deed of Extraordinary General Meeting of Shareholders Resolutions",
+    "document_4": "5. AHU Notification Receipt for Changes to Company Data",
+    "document_5": "6. Production Operation Mining License (IUP)",
+    "document_6": "7. Forest Area Use Permit",
+    "document_7": "8. Taxpayer Identification Number (NPWP)",
+    "document_8": "9. Registration Certificate (SKT)"
+  },
+  "kesimpulanPage": {
+    "conclusion": "Conclusion",
+    "as_a_nickel_mining_company_based": "As a nickel mining company based in Central Sulawesi, Indonesia, <strong>PT Bumi Morowali Utama (BMU)</strong> is well-positioned to benefit from the continued growth of the global new energy and stainless steel industries, thanks to its strategic location and abundant resources.",
+    "bmu_remains_committed_to_strengthening_lawful": "BMU remains committed to strengthening lawful and compliant mining operations, advancing exploration and mining technologies, and actively protecting the local environment. At the same time, the company strives to establish stable partnerships with downstream smelting and battery enterprises, ensuring long-term and sustainable development.",
+    "bmu_mine": "BMU Mine"
+  },
+  "careersPage": {
+    "career_in_our_company": "Career in Our Company",
+    "discover_who_we_are_and_the": "Discover who we are and the culture that drives our success.",
+    "career_illustration": "Career Illustration",
+    "in_our_space_few_companies_are": "In our space, few companies are like us. We’re home to some of the smartest, most dedicated people in the world. We care deeply about people and the planet, create innovative solutions for the world’s toughest infrastructure challenges, and own our future as employee-owners. <br></br><br></br> Our professionals act like the company belongs to them – because it does. Every decision we make reflects our commitment to safety, our values, and our people while driving progress for our clients and communities. <br></br><br></br> At Black & Veatch, you’ll enjoy our hybrid work environment that allows you to work in ways that best support your personal and professional success. Here, you’ll be empowered to grow, explore new possibilities, and help create a sustainable future — all while owning your career journey.",
+    "join_us": "Join Us",
+    "why_work_with_us": "Why Work With Us",
+    "employee_owned_culture": "Employee-Owned Culture",
+    "you_have_a_voice_every_team": "You have a voice. Every team member contributes to our shared success.",
+    "work_life_balance": "Work-Life Balance",
+    "hybrid_work_options_that_support_your": "Hybrid work options that support your personal and professional growth.",
+    "make_global_impact": "Make Global Impact",
+    "help_shape_sustainable_infrastructure_that_improves": "Help shape sustainable infrastructure that improves communities worldwide.",
+    "ready_to_start_your_journey": "Ready to Start Your Journey?",
+    "explore_opportunities_that_allow_you_to": "Explore opportunities that allow you to grow, make an impact, and build a meaningful career with us.",
+    "explore_careers": "Explore Careers"
+  },
+  "blogPage": {
+    "news_and_company_updates": "News and Company Updates",
+    "stay_updated_with_the_latest_company": "Stay updated with the latest company information."
+  },
+  "contactPage": {
+    "contact_us": "Contact Us",
+    "we_are_ready_to_assist_you": "We are ready to assist you in obtaining more information about services, partnerships, or questions related to our company."
+  },
+  "aboutPage": {
+    "about_us": "About Us",
+    "pt_bumi_morowali_utama_is_committed": "PT. Bumi Morowali Utama is committed to becoming a trusted partner in supporting industrial advancement through innovation, professionalism, and strong dedication. We continue to grow by prioritizing quality, workplace safety, and responsibility toward the environment and surrounding communities."
+  },
+  "careerDetail": {
+    "job_vacancy_details": "Job vacancy details",
+    "location": "📍 Location",
+    "job_type": "💼 Job Type",
+    "published_at": "🗓 Published At",
+    "job_description": "Job Description",
+    "requirements": "Requirements",
+    "apply_now": "Apply Now"
+  },
+  "newsDetail": {
+    "post_not_found": "Post not found",
+    "tags": "Tags:",
+    "share_this_post": "Share this post:",
+    "by": "By {author}"
+  },
+  "newsList": {
+    "no_data": "No data",
+    "no_news_available_yet": "No news available yet",
+    "we_have_not_published_any_news": "We have not published any news yet. Please check back later.",
+    "previous": "← Previous",
+    "next": "Next →",
+    "pagination": "Page {current} / {total}"
+  },
+  "newsPreview": {
+    "latest_news": "Latest News",
+    "view_all_news": "View All News →"
+  },
+  "common": {
+    "theme": "Switch color theme",
+    "top": "Back to top",
+    "notFound": "Sorry, the page cannot be found",
+    "missing": "The page you are looking for may have moved, been deleted, or does not exist.",
+    "home": "Back to Homepage",
+    "description": "PT. Bumi Morowali Utama — a trusted partner supporting industrial advancement."
   }
 }

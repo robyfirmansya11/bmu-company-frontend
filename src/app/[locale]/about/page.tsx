@@ -1,25 +1,21 @@
+import { pageMetadata } from "@/lib/metadata";
+import { getPageTranslations } from "@/lib/getDictionary";
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import AboutSectionTwo from "@/components/About/AboutSectionTwo";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
-export const metadata: Metadata = {
-  
-  title: "About Us | PT. Bumi Morowali Utama",
-  description:
-    "The About Us page of PT. Bumi Morowali Utama showcases the company's profile, values, vision, mission, and our commitment to supporting industrial growth and sustainable development.",
-};
-
-const AboutPage = () => {
+const AboutPage = async ({ params }: { params: Promise<{ locale: string }> }) => {
+  const t = await getPageTranslations((await params).locale, "aboutPage");
   return (
     <main className="w-full max-w-none mx-0 px-0">
       <AnimateOnScroll direction="up" delay={0.1}>
       {/* Breadcrumb di paling atas full width */}
       <div className="w-full bg-gray-50 dark:bg-gray-900">
         <Breadcrumb
-          pageName="About Us"
-          description="PT. Bumi Morowali Utama is committed to becoming a trusted partner in supporting industrial advancement through innovation, professionalism, and strong dedication. We continue to grow by prioritizing quality, workplace safety, and responsibility toward the environment and surrounding communities."
+          pageName={t("about_us")}
+          description={t("pt_bumi_morowali_utama_is_committed")}
         />
       </div>
             </AnimateOnScroll>
@@ -38,3 +34,7 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+
+export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
+  return pageMetadata((await params).locale, "about_us");
+}

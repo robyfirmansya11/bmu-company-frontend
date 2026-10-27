@@ -1,19 +1,22 @@
+import { getPageTranslations } from "@/lib/getDictionary";
 import Image from "next/image";
+import { sanitizeArticle } from "@/lib/sanitizeArticle";
 import SharePost from "@/components/Blog/SharePost";
 import TagButton from "@/components/Blog/TagButton";
 import { getNewsBySlug } from "@/lib/api/news";
 
 export const dynamic = "force-dynamic"; // <-- tambah ini
 
-export default async function Page({ params }: { params: { locale: string; slug: string } }) {
-  const { slug } = params;
+export default async function Page({ params }: { params: Promise<{ locale: string; slug: string }> }) {
+  const t = await getPageTranslations((await params).locale, "newsDetail");
+  const { slug } = await params;
 
   const post = await getNewsBySlug(slug);
 
   if (!post) {
     return (
       <div className="pt-[150px] pb-[120px] text-center">
-        <h2 className="text-3xl font-bold">Post not found</h2>
+        <h2 className="text-3xl font-bold">{t("post_not_found")}</h2>
       </div>
     );
   }
@@ -28,7 +31,7 @@ export default async function Page({ params }: { params: { locale: string; slug:
             </h2>
 
             <div className="mb-6 text-sm text-gray-500">
-              By {post.author ?? "Admin"} • {post.publishDate}
+              {t("by", {author: post.author ?? "Admin"})} • {post.publishDate}
             </div>
 
             <div className="mb-10 relative aspect-video rounded-md overflow-hidden">
@@ -42,12 +45,12 @@ export default async function Page({ params }: { params: { locale: string; slug:
 
             <div
               className="prose dark:prose-invert max-w-none mb-10"
-              dangerouslySetInnerHTML={{ __html: post.content }}
+              dangerouslySetInnerHTML={{ __html: sanitizeArticle(post.content) }}
             />
 
             {post.tags?.length > 0 && (
               <div className="mb-10">
-                <h4 className="text-body-color mb-3 text-sm font-medium">Tags:</h4>
+                <h4 className="text-body-color mb-3 text-sm font-medium">{t("tags")}</h4>
                 <div className="flex gap-2 flex-wrap">
                   {post.tags.map((t: string) => (
                     <TagButton text={t} key={t} />
@@ -57,9 +60,7 @@ export default async function Page({ params }: { params: { locale: string; slug:
             )}
 
             <div className="mb-5">
-              <h5 className="text-body-color mb-3 text-sm font-medium">
-                Share this post:
-              </h5>
+              <h5 className="text-body-color mb-3 text-sm font-medium">{t("share_this_post")}</h5>
               <SharePost />
             </div>
           </div>

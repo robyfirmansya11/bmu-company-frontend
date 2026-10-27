@@ -1,3 +1,4 @@
+import { getPageTranslations } from "@/lib/getDictionary";
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 export const fetchCache = "force-no-store";
@@ -10,16 +11,17 @@ import Image from "next/image";
 export default async function CareerDetail({
   params,
 }: {
-  params: { locale: string; slug: string };
+  params: Promise<{ locale: string; slug: string }>;
 }) {
-  const career = await getCareerBySlug(params.slug);
+  const t = await getPageTranslations((await params).locale, "careerDetail");
+  const career = await getCareerBySlug((await params).slug);
   if (!career) return notFound();
 
   return (
     <>
       <Breadcrumb
         pageName={career.title}
-        description="Detail lowongan pekerjaan"
+        description={t("job_vacancy_details")}
       />
 
       <section className="pt-[120px] pb-[120px] bg-gray-50 dark:bg-gray-900">
@@ -48,9 +50,7 @@ export default async function CareerDetail({
 
               {/* Location */}
               <div>
-                <h3 className="text-lg font-semibold dark:text-white">
-                  📍 Location
-                </h3>
+                <h3 className="text-lg font-semibold dark:text-white">{t("location")}</h3>
                 <p className="text-gray-700 dark:text-gray-300">
                   {career.location || "-"}
                 </p>
@@ -58,9 +58,7 @@ export default async function CareerDetail({
 
               {/* Type */}
               <div>
-                <h3 className="text-lg font-semibold dark:text-white">
-                  💼 Job Type
-                </h3>
+                <h3 className="text-lg font-semibold dark:text-white">{t("job_type")}</h3>
                 <p className="text-gray-700 dark:text-gray-300">
                   {career.type || "-"}
                 </p>
@@ -68,12 +66,10 @@ export default async function CareerDetail({
 
               {/* Published At */}
               <div>
-                <h3 className="text-lg font-semibold dark:text-white">
-                  🗓 Published At
-                </h3>
+                <h3 className="text-lg font-semibold dark:text-white">{t("published_at")}</h3>
                 <p className="text-gray-700 dark:text-gray-300">
                   {career.published_at
-                    ? new Date(career.published_at).toLocaleDateString()
+                    ? new Date(career.published_at).toLocaleDateString((await params).locale)
                     : "-"}
                 </p>
               </div>
@@ -81,13 +77,13 @@ export default async function CareerDetail({
 
             {/* DESCRIPTION */}
             <div className="prose prose-lg max-w-none dark:prose-invert">
-              <h2 className="font-bold text-2xl">Job Description</h2>
+              <h2 className="font-bold text-2xl">{t("job_description")}</h2>
               <p className="mb-6">{career.description}</p>
 
               {/* REQUIREMENTS */}
               {career.requirements && career.requirements.length > 0 && (
                 <>
-                  <h2 className="font-bold text-2xl mt-10">Requirements</h2>
+                  <h2 className="font-bold text-2xl mt-10">{t("requirements")}</h2>
                   <ul>
                     {career.requirements
                       .filter((req: any) => req.item)
@@ -104,9 +100,7 @@ export default async function CareerDetail({
               <a
                 href="mailto:hrd@yourcompany.com?subject=Lamaran%20Kerja"
                 className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-8 py-3 rounded-lg shadow-md transition-all"
-              >
-                Apply Now
-              </a>
+              >{t("apply_now")}</a>
             </div>
           </div>
         </div>

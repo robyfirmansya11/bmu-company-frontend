@@ -24,7 +24,7 @@ export async function getNewsBySlug(slug: string) {
   
   const base = process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000";
   if (!base || !slug) return null;
-  const url = `${base}/api/news/${slug}`;
+  const url = `${base}/api/news/${encodeURIComponent(slug)}`;
   try {
     const res = await fetch(url, { next: { revalidate: 10 } });
     if (!res.ok) {

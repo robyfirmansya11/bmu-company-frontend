@@ -1,10 +1,12 @@
 "use client";
+import { useTranslations } from "next-intl";
 
 import React, { useState } from "react";
 import { FileText, X } from "lucide-react";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 const IzinPage = () => {
+  const t = useTranslations("izinPage");
   const pdfFiles = [
     "1. Akta Pendirian.pdf",
     "2. SKMENKEH (AKTA PENDIRIAN NO 23).pdf",
@@ -21,9 +23,9 @@ const IzinPage = () => {
   const [selectedTitle, setSelectedTitle] = useState<string | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
-  const openPdf = (file: string) => {
+  const openPdf = (file: string, index: number) => {
     setSelectedPdf(`/images/about/sertifikasi/${encodeURIComponent(file)}`);
-    setSelectedTitle(file.replace(".pdf", ""));
+    setSelectedTitle(t(`document_${index}`));
     setTimeout(() => setIsVisible(true), 50);
   };
 
@@ -40,26 +42,22 @@ const IzinPage = () => {
       <AnimateOnScroll direction="right" delay={0.20}>
       <div className="container mx-auto px-6 lg:px-16">
         {/* Judul Halaman */}
-        <h1 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-6">
-          Company Key Licenses and Certifications
-        </h1>
+        <h1 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-6">{t("company_key_licenses_and_certifications")}</h1>
 
         {/* Deskripsi */}
-        <p className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">
-          Attached are the company’s principal licenses and certifications, including IUPOP, IPPKH, RKAB, and others.
-        </p>
+        <p className="text-center text-gray-600 dark:text-gray-300 mb-12 max-w-3xl mx-auto">{t("attached_are_the_company_s_principal")}</p>
 
         {/* Grid File PDF */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {pdfFiles.map((file, i) => (
             <button
               key={i}
-              onClick={() => openPdf(file)}
+              onClick={() => openPdf(file, i)}
               className="flex items-center gap-3 p-4 border border-gray-200 dark:border-gray-700 rounded-xl hover:shadow-md hover:bg-gray-50 dark:hover:bg-gray-800 transition w-full text-left"
             >
               <FileText className="text-red-600" size={20} />
               <span className="text-gray-800 dark:text-gray-200 text-sm font-medium">
-                {file.replace(".pdf", "")}
+                {t(`document_${i}`)}
               </span>
             </button>
           ))}
@@ -80,6 +78,7 @@ const IzinPage = () => {
             >
               {/* Tombol Close */}
               <button
+                aria-label={t("close")}
                 onClick={closePdf}
                 className="absolute top-3 right-3 z-[10000] 
                   text-gray-600 hover:text-red-600 dark:text-gray-300 transition-colors"
@@ -96,7 +95,7 @@ const IzinPage = () => {
               <iframe
                 src={selectedPdf}
                 className="w-full h-full pt-10 rounded-lg"
-                title="PDF Viewer"
+                title={t("pdf_viewer")}
               ></iframe>
             </div>
           </div>
