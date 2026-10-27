@@ -1,74 +1,159 @@
-# Startup - Free Next.js Startup Website Template
+<div align="center">
+  <img src="public/images/logo/BMU.PNG" alt="PT Bumi Morowali Utama" width="180" />
+  <h1>PT Bumi Morowali Utama</h1>
+  <p>Website perusahaan pertambangan nikel di Morowali, Sulawesi Tengah.</p>
+  <p><a href="https://bumimorowaliutama.com/id">Website Resmi</a> · <a href="https://bumimorowaliutama.com/en">English</a> · <a href="https://bumimorowaliutama.com/zh">中文</a></p>
+</div>
 
-Startup is a free, open-source, and premium-quality [**Next.js startup website template**](https://nextjstemplates.com/templates/startup) that comes with everything you need to launch a startup, business, or SaaS website, including all essential sections, components, and pages.
+---
 
-If you're looking for a high-quality and visually appealing, feature-rich Next.js Template for your next startup, SaaS, or business website, this is the perfect choice and starting point for you!
+## Tentang project
 
-### ✨ Key Features
-- Crafted for Startup and SaaS Business
-- Next.js and Tailwind CSS
-- All Essential Business Sections and Pages
-- High-quality and Clean Design
-- Dark and Light Version
-- TypeScript Support
-and Much More ...
+Repository ini berisi frontend website **PT Bumi Morowali Utama (PT BMU)** untuk menyajikan profil perusahaan, kegiatan eksplorasi dan operasi pertambangan, portofolio, berita, karir, serta informasi kontak.
 
-### 🙌 Detailed comparison between the Free and Pro versions of Startup
+Aplikasi menggunakan Next.js App Router dengan tiga bahasa dan tema terang/gelap. Frontend berjalan di Vercel, sedangkan layanan API dikelola secara terpisah dari repository ini.
 
-| Feature             | Free | Pro |
-|---------------------|------------|----------|
-| Next.js Landing Page             | ✅ Yes      | ✅ Yes      |
-| All The Integrations - Auth, DB, Payments, Blog and many more ...             | ❌ No      | ✅ Yes |
-| Homepage Variations             | 1      | 2 |
-| Additional SaaS Pages and Components             | ❌ No      | ✅ Yes |
-| Functional Blog with Sanity       | ❌ No      | ✅ Yes |
-| Use with Commercial Projects            | ✅ Yes      | ✅ Yes      |
-| Lifetime Free Updates             | ✅ Yes      | ✅ Yes |
-| Email Support       | ❌ No         | ✅ Yes       |
-| Community Support         | ✅ Yes         | ✅ Yes       |
+## Fitur
 
+- **Multibahasa:** Indonesia (`/id`), Inggris (`/en`), dan Mandarin (`/zh`).
+- **Desain responsif** dengan dukungan light mode dan dark mode.
+- **Profil dan kegiatan perusahaan:** eksplorasi, operasi, portofolio, serta prospek industri nikel.
+- **Berita dan formulir kontak** melalui integrasi API, serta halaman karir yang mengarahkan pengunjung ke portal rekrutmen.
+- **SEO:** metadata per halaman, canonical, hreflang, Open Graph, dan data terstruktur Organization/WebSite.
+- **Sitemap dan robots.txt** untuk membantu penemuan halaman oleh mesin pencari.
+- **Sanitasi HTML artikel dan security headers** sebagai bagian dari perlindungan frontend.
 
-### [🔥 Get Startup Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+## Teknologi
 
-[![Startup Pro](https://raw.githubusercontent.com/NextJSTemplates/startup-nextjs/main/startup-pro.webp)](https://nextjstemplates.com/templates/saas-starter-startup)
+| Bagian | Teknologi |
+| --- | --- |
+| Framework | Next.js 15 · App Router |
+| Antarmuka | React 19 · TypeScript |
+| Styling | Tailwind CSS 4 · CSS |
+| Internasionalisasi | next-intl |
+| Tema | next-themes |
+| Animasi dan ikon | Framer Motion · Lucide React |
+| Sanitasi konten | sanitize-html |
+| Deployment frontend | Vercel |
 
-Startup Pro - Expertly crafted for fully-functional, high-performing SaaS startup websites. Comes with with Authentication, Database, Blog, and all the essential integrations necessary for SaaS business sites.
+Versi dependensi tersedia di [package.json](package.json) dan dikunci melalui [package-lock.json](package-lock.json).
 
+## Menjalankan secara lokal
 
-- [🚀 View Free Demo](https://startup.nextjstemplates.com/)
+Siapkan Git, Node.js, dan npm yang kompatibel dengan dependensi project.
 
-- [🚀 View Pro Demo](https://startup-pro.nextjstemplates.com/)
+### 1. Clone dan instal dependensi
 
-- [📦 Download](https://nextjstemplates.com/templates/startup)
+```bash
+git clone https://github.com/robyfirmansya11/bmu-company-frontend.git
+cd bmu-company-frontend
+npm ci
+```
 
-- [🔥 Get Pro](https://nextjstemplates.com/templates/saas-starter-startup)
+### 2. Konfigurasi environment
 
-- [🔌 Documentation](https://nextjstemplates.com/docs)
+Buat file `.env.local` di root project:
 
-### ⚡ Deploy Now
+```dotenv
+SITE_URL=https://bumimorowaliutama.com
+NEXT_PUBLIC_API_URL=http://127.0.0.1:8000
+NEXT_PUBLIC_APP_URL=http://127.0.0.1:8000
+```
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNextJSTemplates%2Fstartup-nextjs)
+| Variabel | Kegunaan |
+| --- | --- |
+| `SITE_URL` | Domain utama untuk canonical, sitemap, dan data terstruktur. Default: `https://bumimorowaliutama.com`. |
+| `NEXT_PUBLIC_API_URL` | Alamat dasar backend tanpa akhiran `/`, diperlukan untuk fitur berbasis API. |
+| `NEXT_PUBLIC_APP_URL` | Alamat dasar server media ketika API mengembalikan path gambar berita relatif. |
+| `GOOGLE_SITE_VERIFICATION` | Opsional: token verifikasi HTML Google Search Console. Tidak diperlukan untuk verifikasi DNS TXT. |
 
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/NextJSTemplates/startup-nextjs)
+Alamat localhost di atas merupakan contoh pengembangan. Sesuaikan dengan backend dan server media yang digunakan. Variabel berawalan `NEXT_PUBLIC_` dapat terlihat di browser; jangan gunakan untuk menyimpan rahasia. File environment lokal diabaikan oleh Git.
 
+### 3. Jalankan aplikasi
 
-### 📄 License
-Startup is 100% free and open-source, feel free to use with your personal and commercial projects.
+```bash
+npm run dev
+```
 
-### 💜 Support
-If you like the template, please star this repository to inspire the team to create more stuff like this and reach more users like you!
+Buka [http://localhost:3000/id](http://localhost:3000/id). Bahasa lain tersedia pada `/en` dan `/zh`.
 
-### ✨ Explore and Download - Free [Next.js Templates](https://nextjstemplates.com)
+Untuk menggunakan port berbeda:
 
-### Update Log
+```bash
+npm run dev -- --port 3003
+```
 
-**10 April 2025**
-- Fix peer deps issue with Next.js 15
-- Upgrade to tailwind v4
-- Refactored blog cards for handling edge cases(text ellipsis on bio, keeping author details at the bottom etc.)
-- Re-wrote blog details page with icons separation, fallback author image and better markup.
-- Fixed duplicate key errors on homepage.
-- Separated icons on theme-switcher button, and refactored scroll-to-top button.
+Halaman profil statis dapat digunakan tanpa backend. Data berita, detail lowongan, dan pengiriman formulir kontak memerlukan backend serta konfigurasi yang sesuai. Repository ini tidak menyediakan server API atau database.
 
-**29 Jan 2025**
-- Upgraded to Next.js 15
+## Build produksi
+
+Hentikan development server pada folder project yang sama sebelum menjalankan build.
+
+```bash
+npm run build
+npm run start
+```
+
+## Pemeriksaan
+
+Pemeriksaan tipe dan pengujian otomatis:
+
+```bash
+npx tsc --noEmit
+node --test tests/i18n.test.cjs tests/scroll-up.test.cjs tests/security.test.cjs
+```
+
+Untuk memeriksa halaman dan HTML SEO, jalankan server terlebih dahulu. Contoh PowerShell:
+
+```powershell
+$env:BMU_PREVIEW_URL = "http://127.0.0.1:3000"
+node tests/i18n-smoke.cjs
+node tests/seo-smoke.cjs
+```
+
+Pengujian mencakup konsistensi terjemahan, navigasi bahasa, respons halaman, sanitasi artikel, security headers, serta keluaran metadata, sitemap, dan data terstruktur. Tes SEO saat ini mengharapkan canonical domain `https://bumimorowaliutama.com`.
+
+## Struktur repository
+
+```text
+src/
+├── app/                # Route, layout, sitemap, dan robots
+│   └── [locale]/       # Halaman berbahasa id, en, dan zh
+├── components/         # Komponen antarmuka
+├── lib/                # API, locale, metadata, SEO, dan sanitasi
+├── messages/           # Kamus terjemahan JSON
+├── services/           # Integrasi layanan
+├── styles/             # Stylesheet tambahan
+└── middleware.ts       # Penanganan locale
+public/                 # Logo, foto, dan aset statis
+tests/                  # Pengujian otomatis dan smoke test
+docs/                   # Dokumentasi bahasa, SEO, dan keamanan
+```
+
+## Deployment
+
+Repository terhubung dengan Vercel untuk deployment otomatis dari branch `main`.
+
+1. Pastikan pemeriksaan yang relevan berhasil sebelum push.
+2. Atur environment produksi di Vercel, termasuk alamat backend yang dapat diakses publik.
+3. Push perubahan ke `main`, kemudian periksa hasil build dan deployment di Vercel.
+4. Periksa halaman utama, navigasi bahasa, formulir kontak, `/robots.txt`, dan `/sitemap.xml` setelah deployment.
+
+Domain dikelola melalui Rumahweb, sedangkan frontend berjalan di Vercel. Pertahankan pengaturan DNS email saat mengubah konfigurasi domain website.
+
+## SEO dan dokumentasi
+
+Identitas perusahaan menggunakan nama **PT Bumi Morowali Utama**, dengan variasi **PT BMU**, **Bumi Morowali Utama**, dan **BMU**.
+
+- [Panduan SEO dan Google Search Console](docs/seo.md)
+- [Dokumentasi bahasa](docs/languages.md)
+- [Catatan pemeriksaan keamanan](docs/security-review.md)
+- [Sitemap produksi](https://bumimorowaliutama.com/sitemap.xml)
+
+Sitemap mencakup halaman publik statis dalam tiga bahasa. Halaman legalitas dan dokumen unduhannya telah dihapus dari versi saat ini. SEO membantu mesin pencari memahami website, tetapi tidak menjamin waktu pengindeksan atau posisi tertentu dalam hasil pencarian.
+
+## Lisensi dan atribusi
+
+Project dikembangkan dari template **Startup** oleh **Next.js Templates**. Atribusi dan ketentuan lisensi sumber tersedia dalam [LICENSE](LICENSE).
+
+Logo, foto, dan materi perusahaan digunakan sebagai identitas serta konten website PT Bumi Morowali Utama. Penggunaan ulang materi tersebut perlu memperhatikan hak pemiliknya.
