@@ -19,7 +19,9 @@ export const metadata = {
   description:
     "Website resmi PT. Bumi Morowali Utama.",
   icons: {
-    icon: "/BMU.PNG", // ubah ke favicon kamu
+    icon: [{ url: "/favicon.png", type: "image/png", sizes: "1000x1000" }],
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
 };
 

@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   poweredByHeader: false,
+  async redirects() {
+    return [{ source: "/favicon.ico", destination: "/favicon.png", permanent: true }];
+  },
   async headers() {
     return [{
       source: "/:path*",
