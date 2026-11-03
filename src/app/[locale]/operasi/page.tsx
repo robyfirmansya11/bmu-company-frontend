@@ -2,13 +2,12 @@ import { pageMetadata } from "@/lib/metadata";
 import { richTextTags } from "@/lib/richTextTags";
 import { getPageTranslations } from "@/lib/getDictionary";
 import Image from "next/image";
-import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 export default async function OperasiPage({ params }: { params: Promise<{ locale: string }> }) {
   const t = await getPageTranslations((await params).locale, "operasiPage");
   return (
     <section className="w-full bg-gray-50 dark:bg-gray-dark py-16 md:py-20 lg:py-34">
-      <AnimateOnScroll direction="right" delay={0.20}>
+      <div>
       <div className="container mx-auto px-6 lg:px-12">
         {/* Judul Halaman */}
         <h1 className="text-3xl md:text-4xl font-bold text-center text-black dark:text-white mb-8">{t("mining_operations")}</h1>
@@ -58,7 +57,7 @@ export default async function OperasiPage({ params }: { params: Promise<{ locale
 </div>
 
       </div>
-      </AnimateOnScroll>
+      </div>
     </section>
   );
 }

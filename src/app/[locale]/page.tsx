@@ -1,5 +1,6 @@
 import { companyStructuredData } from "@/lib/seo";
 import { pageMetadata } from "@/lib/metadata";
+import InstagramSection from "@/components/InstagramSection";
 import Brands from "@/components/Brands";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Contact from "@/components/Contact";
@@ -13,10 +14,11 @@ export default function Home() {
     <main className="mining-home">
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(companyStructuredData()).replace(/</g, "\\u003c")}} />
       <ScrollUp />
-      <Hero />
-      <Features />
-      <Video />
+      <div><Hero /></div>
+      <div><Features /></div>
+      <div><Video /></div>
       <Brands />
+      <div><InstagramSection /></div>
       <Contact />
     </main>
   );

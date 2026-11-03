@@ -104,3 +104,8 @@
   .mine-video-link { justify-content:flex-start; padding:18px; }
 }
 @media(prefers-reduced-motion:reduce) { .mining-home *, .mining-home *::before { transition:none!important; animation:none!important; } }
+
+.mine-instagram { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,540px); align-items:center; gap:clamp(24px,6vw,96px); }
+.mine-instagram .mine-button { margin-top:24px; overflow-wrap:anywhere; }
+.mine-instagram iframe { display:block; width:100%; height:490px; border:1px solid var(--mine-line); border-radius:14px; background:white; }
+@media(max-width:767px){ .mine-instagram { grid-template-columns:minmax(0,1fr); } .mine-instagram iframe { height:440px; } }

@@ -2,13 +2,12 @@ import { pageMetadata } from "@/lib/metadata";
 import { richTextTags } from "@/lib/richTextTags";
 import { getPageTranslations } from "@/lib/getDictionary";
 import Image from "next/image";
-import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 export default async function PortfolioPage({ params }: { params: Promise<{ locale: string }> }) {
   const t = await getPageTranslations((await params).locale, "portfolioPage");
   return (
     <section className="w-full bg-gray-50 dark:bg-gray-dark py-16 md:py-20 lg:py-24">
-      <AnimateOnScroll direction="left" delay={0.5}>
+      <div>
         <div className="container mx-auto px-6 lg:px-12">
           {/* Judul Halaman */}
           <h1 className="text-3xl md:text-4xl font-bold text-center text-black dark:text-white py-16">{t("projects_and_business_portfolio")}</h1>
@@ -70,7 +69,7 @@ export default async function PortfolioPage({ params }: { params: Promise<{ loca
             />
           </div>
         </div>
-      </AnimateOnScroll>
+      </div>
     </section>
   );
 }

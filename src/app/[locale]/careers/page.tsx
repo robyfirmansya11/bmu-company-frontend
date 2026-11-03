@@ -2,7 +2,6 @@ import { pageMetadata } from "@/lib/metadata";
 import { richTextTags } from "@/lib/richTextTags";
 import { getPageTranslations } from "@/lib/getDictionary";
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import AnimateOnScroll from "@/components/AnimateOnScroll";
 import Link from "next/link";
 import { Metadata } from "next";
 
@@ -17,15 +16,15 @@ export default async function CareersPage({
   return (
     <>
       {/* Breadcrumb */}
-      <AnimateOnScroll direction="up" delay={0.1}>
+      <div>
         <Breadcrumb
           pageName={t("career_in_our_company")}
           description={t("discover_who_we_are_and_the")}
         />
-      </AnimateOnScroll>
+      </div>
 
       {/* Image Below Breadcrumb */}
-      <AnimateOnScroll direction="up" delay={0.12}>
+      <div>
         <div className="container mt-8">
           <div className="overflow-hidden rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700">
 <img
@@ -35,10 +34,10 @@ export default async function CareersPage({
  />
           </div>
         </div>
-      </AnimateOnScroll>
+      </div>
 
       {/* Main Information Section */}
-      <AnimateOnScroll direction="right" delay={0.15}>
+      <div>
         <section className="pt-10 pb-16">
           <div className="container">
             <div className="bg-white dark:bg-dark p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 max-w-4xl mx-auto">
@@ -55,10 +54,10 @@ export default async function CareersPage({
             </div>
           </div>
         </section>
-      </AnimateOnScroll>
+      </div>
 
       {/* Why Work With Us Section */}
-      <AnimateOnScroll direction="up" delay={0.2}>
+      <div>
         <section className="py-16">
           <div className="container text-center">
             <h2 className="text-3xl font-bold text-dark dark:text-white mb-10">{t("why_work_with_us")}</h2>
@@ -81,10 +80,10 @@ export default async function CareersPage({
             </div>
           </div>
         </section>
-      </AnimateOnScroll>
+      </div>
 
       {/* Bottom CTA */}
-      <AnimateOnScroll direction="up" delay={0.25}>
+      <div>
         <section className="py-20 bg-gray-100 dark:bg-gray-800 rounded-xl mt-16 shadow-inner">
           <div className="container text-center">
             <h2 className="text-3xl font-bold text-dark dark:text-white mb-4">{t("ready_to_start_your_journey")}</h2>
@@ -97,7 +96,7 @@ export default async function CareersPage({
             >{t("explore_careers")}</Link>
           </div>
         </section>
-      </AnimateOnScroll>
+      </div>
     </>
   );
 }

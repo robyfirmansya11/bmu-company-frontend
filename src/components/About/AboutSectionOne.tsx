@@ -3,7 +3,6 @@ import { useTranslations } from "next-intl";
 
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
-import { motion, Variants } from "framer-motion";
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -11,32 +10,17 @@ const checkIcon = (
   </svg>
 );
 
-// ✔ FIXED: ease diganti ke 'easeInOut' agar valid di Transition type
-const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: (i: number = 0) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      delay: i * 0.2,
-      ease: "easeInOut",
-    },
-  }),
-};
-
 const AboutSectionOne = () => {
   const t = useTranslations("about");
   const List = ({ text }: { text: string }) => (
-    <motion.p
-      variants={fadeUp}
+    <p
       className="text-body-color mb-1 flex items-center text-lg font-medium"
     >
       <span className="bg-primary/10 text-primary mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md">
         {checkIcon}
       </span>
       {text}
-    </motion.p>
+    </p>
   );
 
   return (
@@ -46,56 +30,35 @@ const AboutSectionOne = () => {
     >
       <div className="w-full px-6 lg:px-10">
         {/* Judul & paragraf */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeUp}
+        <div
         >
           <SectionTitle title={t("about_the_company")} paragraph="" mb="20px" />
           <p className="text-body-color text-lg font-medium w-full mb-10 leading-relaxed">{t("pt_bumi_morowali_utama_was_established")}</p>
-        </motion.div>
+        </div>
 
         <div className="flex flex-wrap items-start justify-between">
           {/* KIRI */}
-          <motion.div
+          <div
             className="w-full lg:w-1/2 lg:pr-10"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={{
-              hidden: {},
-              visible: {
-                transition: { staggerChildren: 0.15 },
-              },
-            }}
           >
             <List text={t("vision")} />
-            <motion.p variants={fadeUp} className="text-body-color mb-6 text-lg font-medium">{t("to_become_a_trusted_strategic_partner")}</motion.p>
+            <p className="text-body-color mb-6 text-lg font-medium">{t("to_become_a_trusted_strategic_partner")}</p>
 
             <List text={t("mission")} />
-            <motion.ul
-              variants={{
-                hidden: {},
-                visible: { transition: { staggerChildren: 0.1 } },
-              }}
+            <ul
               className="list-disc pl-5 text-body-color mb-6 text-lg font-medium space-y-2"
             >
               {[0, 1, 2, 3, 4].map((index) => (
-                <motion.li key={index} variants={fadeUp}>
+                <li key={index}>
                   {t(`mission_${index}`)}
-                </motion.li>
+                </li>
               ))}
-            </motion.ul>
-          </motion.div>
+            </ul>
+          </div>
 
           {/* KANAN */}
-          <motion.div
+          <div
             className="w-full lg:w-1/2 flex justify-center mt-10 lg:mt-0"
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true }}
           >
             <div className="relative w-full max-w-[1280px] aspect-[2/2] overflow-hidden rounded-[30px] shadow-xl">
               <Image
@@ -105,7 +68,7 @@ const AboutSectionOne = () => {
                 className="object-cover transition-transform duration-500 hover:scale-105"
               />
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

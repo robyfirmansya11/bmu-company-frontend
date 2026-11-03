@@ -1,3 +1,4 @@
+import SectionScrollMotion from "@/components/SectionScrollMotion";
 import { getDictionary } from "@/lib/getDictionary";
 import Providers from "@/providers";
 import Header from "@/components/Header";
@@ -17,6 +18,7 @@ export default async function LocaleLayout({
 
   return (
     <Providers locale={locale} messages={messages}>
+      <SectionScrollMotion />
       <Header locale={locale} />
       {children}
       <Footer />

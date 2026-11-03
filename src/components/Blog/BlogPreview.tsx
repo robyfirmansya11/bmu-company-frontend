@@ -5,7 +5,6 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import SingleBlog from "./SingleBlog";
-import AnimateOnScroll from "../AnimateOnScroll";
 import { fetchNews } from "@/lib/api-client/news";
 
 export default function BlogPreview() {
@@ -31,7 +30,7 @@ export default function BlogPreview() {
   return (
     <section className="py-16 bg-gray-light dark:bg-bg-color-dark">
       <div className="container text-center">
-        <AnimateOnScroll>
+        <div>
           <h2 className="text-3xl font-bold mb-6 text-black dark:text-white">{t("latest_news")}</h2>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -46,7 +45,7 @@ export default function BlogPreview() {
               className="inline-block rounded bg-primary px-6 py-3 text-white font-medium hover:bg-primary/90 transition"
             >{t("view_all_news")}</Link>
           </div>
-        </AnimateOnScroll>
+        </div>
       </div>
     </section>
   );

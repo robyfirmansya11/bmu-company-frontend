@@ -1,7 +1,6 @@
 "use client";
 import { useTranslations } from "next-intl";
 
-import AnimateOnScroll from "../AnimateOnScroll";
 import NewsLatterBox from "./NewsLatterBox";
 import Swal from "sweetalert2";
 
@@ -58,7 +57,7 @@ const Contact = () => {
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-1">
       <div className="container">
-        <AnimateOnScroll>
+        <div>
           <div className="-mx-4 flex flex-wrap">
             {/* FORM */}
             <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
@@ -102,7 +101,7 @@ const Contact = () => {
               <NewsLatterBox />
             </div>
           </div>
-        </AnimateOnScroll>
+        </div>
       </div>
     </section>
   );

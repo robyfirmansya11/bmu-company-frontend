@@ -4,13 +4,12 @@ import { useTranslations } from "next-intl";
 
 import React from "react";
 import Image from "next/image";
-import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 const KesimpulanPage = () => {
   const t = useTranslations("kesimpulanPage");
   return (
     <section className="w-full bg-gray-50 dark:bg-gray-dark py-16 md:py-20 lg:py-34">
-      <AnimateOnScroll direction="left" delay={0.20}>
+      <div>
       <div className="container mx-auto px-6 lg:px-12">
         {/* Judul Halaman */}
         <h1 className="text-3xl md:text-4xl font-bold text-center text-black dark:text-white mb-8">{t("conclusion")}</h1>
@@ -35,7 +34,7 @@ const KesimpulanPage = () => {
           </div>
         </div>
       </div>
-      </AnimateOnScroll>
+      </div>
     </section>
   );
 };

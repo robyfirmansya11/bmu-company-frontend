@@ -1,69 +1,53 @@
 "use client";
 
-import { motion, useAnimation, Variants, easeInOut } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
 
 interface AnimateOnScrollProps {
-  children: React.ReactNode;
+  children: ReactNode;
   direction?: "up" | "down" | "left" | "right" | "zoom";
   delay?: number;
   duration?: number;
 }
 
-const AnimateOnScroll: React.FC<AnimateOnScrollProps> = ({
-  children,
-  direction = "up",
-  delay = 0.1,
-  duration = 0.6,
-}) => {
-  const controls = useAnimation();
-  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
-
-  useEffect(() => {
-    if (inView) controls.start("visible");
-  }, [controls, inView]);
-
-  // Hitung offset berdasarkan arah
-  const offset = {
-    up: { y: 20, x: 0 },
-    down: { y: -20, x: 0 },
-    left: { y: 0, x: 20 },
-    right: { y: 0, x: -20 },
-    zoom: { y: 0, x: 0 },
-  }[direction];
-
-  const variants: Variants = {
-    hidden: {
-      opacity: 0,
-      y: offset.y,
-      x: offset.x,
-      scale: direction === "zoom" ? 0.95 : 1,
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      x: 0,
-      scale: 1,
-      transition: {
-        duration,
-        delay,
-        ease: easeInOut, // FIX TRANSITION EASING
-      },
-    },
-  };
-
-  return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={controls}
-      variants={variants}
-      className="will-change-transform"
-    >
-      {children}
-    </motion.div>
-  );
+const startTransform = {
+  up: "translateY(14px)",
+  down: "translateY(-14px)",
+  left: "translateX(14px)",
+  right: "translateX(-14px)",
+  zoom: "scale(.98)",
 };
 
-export default AnimateOnScroll;
+export default function AnimateOnScroll({
+  children, direction = "up", delay = 0, duration = .5,
+}: AnimateOnScrollProps) {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const element = ref.current;
+    const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (!element || preference.matches || !window.IntersectionObserver || !element.animate) return;
+
+    let animation: Animation | undefined;
+    const observer = new IntersectionObserver(entries => {
+      if (!entries.some(entry => entry.isIntersecting)) return;
+      observer.disconnect();
+      if (preference.matches) return;
+      animation = element.animate([
+        { opacity: .35, transform: startTransform[direction] },
+        { opacity: 1, transform: "none" },
+      ], { duration: duration * 1000, delay: delay * 1000, fill: "backwards", easing: "cubic-bezier(.2,.7,.3,1)" });
+    });
+    observer.observe(element);
+    const stop = () => {
+      if (preference.matches) { observer.disconnect(); animation?.cancel(); }
+    };
+    preference.addEventListener("change", stop);
+    return () => {
+      observer.disconnect();
+      animation?.cancel();
+      preference.removeEventListener("change", stop);
+    };
+  }, [direction, delay, duration]);
+
+  return <div ref={ref}>{children}</div>;
+}

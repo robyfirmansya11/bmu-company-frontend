@@ -3,7 +3,6 @@ import { useTranslations } from "next-intl";
 import { Brand } from "@/types/brand";
 import Image from "next/image";
 import brandsData from "./brandsData";
-import AnimateOnScroll from "../AnimateOnScroll";
 
 const Brands = () => {
   const t = useTranslations("partners");
@@ -33,7 +32,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
 
   return (
     <div className="flex items-center justify-center p-2">
-      <AnimateOnScroll>
+      <div>
         <a
           href={href}
           target="_blank"
@@ -60,7 +59,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
             />
           </div>
         </a>
-      </AnimateOnScroll>
+      </div>
     </div>
   );
 };

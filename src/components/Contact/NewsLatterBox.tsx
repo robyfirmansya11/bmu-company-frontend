@@ -2,7 +2,6 @@
 import { useTranslations } from "next-intl";
 
 import { useTheme } from "next-themes";
-import AnimateOnScroll from "../AnimateOnScroll";
 
 const NewsLatterBox = () => {
   const t = useTranslations("location");
@@ -10,7 +9,7 @@ const NewsLatterBox = () => {
 
   return (
     <div className="shadow-three dark:bg-gray-dark relative z-10 rounded-xs bg-white p-8 sm:p-11 lg:p-8 xl:p-11">
-      <AnimateOnScroll direction="right" delay={0.3}>
+      <div>
       <h3 className="mb-4 text-2xl leading-tight font-bold text-black dark:text-white">{t("our_location")}</h3>
       <p className="border-body-color/25 text-body-color mb-6 border-b pb-6 text-base leading-relaxed dark:border-white/25">{t("visit_our_location_on_the_map")}</p>
 
@@ -26,7 +25,7 @@ const NewsLatterBox = () => {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      </AnimateOnScroll>
+      </div>
     </div>
   );
 };
